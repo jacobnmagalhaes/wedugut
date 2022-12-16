@@ -61,21 +61,7 @@ export function MainComponent() {
         <h1 className="text-[30px] mb-6 text-blue-pattern lg:mt-10">Links</h1>
         <div className="flex justify-center flex-wrap">
 
-          {ytlinks.map((x, idx) => (
-
-
-            <a key={idx} href={x.link} target={'_blank'} className='m-3 p-3 flex flex-col'>
-
-              <CardComponent
-                image={x.img}
-                alt="Painel 1"
-                href=""
-              />
-                 <p className="mt-3 text-white text-3xl">{x.text}</p>
-
-            </a>
-          )
-          )}
+          
 
 
 

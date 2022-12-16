@@ -57,7 +57,7 @@ export default function Action() {
                         <Image
                             src={"/images/action/SHOP_BUTTON.webp"}
                             alt="Shop Button"
-                            layout="fill"
+                            layout="fill"mx-2
                             objectFit="contain"
                         />
                     </div>
@@ -77,8 +77,8 @@ export default function Action() {
 
 
             {/* images climate */}
-            <div className='flex mt-8 '>
-                <div className="mr-3 w-[180px] h-[300px]  lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+            <div className='flex mt-8 flex-wrap justify-center'>
+                <div className="mr-3 w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
 
                     <a href="https://climatechange.dugut.app/world-page/#" target={'blank'}>
 
@@ -90,11 +90,33 @@ export default function Action() {
                         />
                     </a>
                 </div>
-                <div className="w-[180px] h-[300px]  lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
                     <a href="https://plastic.dugut.app/world-page/#" target={'blank'}>
 
                         <Image
                             src={"/images/action/PLASTIC.png"}
+                            alt="plastic"
+                            layout="fill"
+                            objectFit="contain"
+                        />
+                    </a>
+                </div>
+                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                    <a href="https://vou.dugut.app/world-page/" target={'blank'}>
+
+                        <Image
+                            src={"/images/action/PORTUGAL.png"}
+                            alt="plastic"
+                            layout="fill"
+                            objectFit="contain"
+                        />
+                    </a>
+                </div>
+                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                    <a href="https://ukraineschools.dugut.app/world-page" target={'blank'}>
+
+                        <Image
+                            src={"/images/action/UKRAINE.png"}
                             alt="plastic"
                             layout="fill"
                             objectFit="contain"
