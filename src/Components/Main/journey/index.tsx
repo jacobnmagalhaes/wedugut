@@ -67,7 +67,7 @@ export default function Journey() {
                                 </a>
 
                                 <div className='flex flex-col w-52 mx-2 text-white justify-center items-center'>
-                                    <p className='text-md md:text-2xl text-center'>{x.head?x.head : ''}</p>
+                                    {/* <p className='text-md md:text-2xl text-center'>{x.head?x.head : ''}</p> */}
                                     <p className='text-left my-1 ml-5 text-xs md:text-sm'>{x.text}</p>
 
                                     <a href={x.href} target={'blank'} className='mt-3 hover:brightness-110'>
