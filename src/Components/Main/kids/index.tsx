@@ -58,18 +58,6 @@ export function MainComponent() {
 
         </div>
 
-        <h1 className="text-[30px] mb-6 text-blue-pattern lg:mt-10">Links</h1>
-        <div className="flex justify-center flex-wrap">
-
-          
-
-
-
-          
-            
-            
-            
-        </div>
       </div>
     </main>
   );
