@@ -112,7 +112,7 @@ export default function Action() {
                         />
                     </a>
                 </div>
-                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                {/* <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
                     <a href="https://ukraineschools.dugut.app/world-page" target={'blank'}>
 
                         <Image
@@ -122,7 +122,7 @@ export default function Action() {
                             objectFit="contain"
                         />
                     </a>
-                </div>
+                </div> */}
             </div>
 
 
