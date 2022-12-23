@@ -80,7 +80,7 @@ export default function TakeAction() {
 
                         <RWebShare
                             data={{
-                                text: "Junte-se a nós para tomar medidas que permitam aos jovens estudantes Portugueses fazer do mundo um lugar melhor!  /  Join us in taking action to enable young Portugese students to make the world a better place!:",
+                                text:'Join us in helping young volunteers make a difference! / Junte-se a nós para ajudar os jovens voluntários a fazer a diferença em Portugal!',
                                 url: "https://vou.dugut.app/world-page",
                                 title: "Invite your friends",
                             }}
