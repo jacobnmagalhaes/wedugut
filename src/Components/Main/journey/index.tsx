@@ -7,6 +7,7 @@ export default function Journey() {
     let imgs = [
         { src: '/images/journey/PlasticJourney.png', href: 'https://plastic.dugut.app/world-page/#', text: 'More than 5 trillion pieces of plastic are already floating in our oceans. Learn about our plastic waste problem and how you can make a difference, at the end of the journey we will clean up ocean plastic in your name! ', head: 'Plastic Journey' },
         { src: '/images/journey/ClimateJourney.png', href: 'https://climatechange.dugut.app/world-page/#', text: 'Droughts, wildfires, and extreme weather conditions are only going to increase as the planet heats up! Learn about our climate crisis and how you can make a difference, and at the end of the journey we will plant a tree in your name!', head: 'Climate Journey' },
+        { src: '/images/journey/LOS.png', href: 'https://planttreekids.dugut.app/world-page ', text: 'Aprenda cómo puede plantar un árbol gratis y enseñe a sus hijos sobre la reforestación sostenible y el cambio climático en el camino. ¡Guíe a su hijo a través de esta experiencia usando este divertido y atractivo viaje gamificado! ', head: 'Kids Trees' },
         { src: '/images/journey/PORTUGAL.png', href: 'https://vou.dugut.app/world-page/', text: 'Saiba como os jovens estudantes portugueses estão a fazer a diferença em todo o país, ajudando a limpar o lixo plástico, plantar árvores e ensinar às nossas futuras gerações o que significa ser sustentável e como alcançá-lo. Participe desta jornada e ajude os seus colegas com os seus esforços, cada pessoa que concluir esta jornada desbloqueará uma micro-ação sustentável para financiar o seu trabalho!', head: 'VOU Journey' },
         // {src:'/images/journey/UKRAINE.png',href:'https://ukraineschools.dugut.app/world-page',text:'Ukraine has lost enormous amounts of access to electricity and its affecting schools, orphanages and more. Help us provide them with access to renewable energy that will last them generations as they rebuild their country from these devastating attacks! ',head:'Ukraine Journey'},
         { src: '/images/journey/CLEANWATER.png', href: ' https://accesstowater.dugut.app/', text: 'Help us provide clean water to those in need, follow this journey to learn more about how water scarcity is affecting millions of people worldwide and what we can do to help!', head: 'Provide Access to Clean Water ' },
@@ -24,7 +25,6 @@ export default function Journey() {
         { src: '/images/journey/REFUGEE.webp', href: 'https://refugeecrisis.dugut.app/', text: 'Refugees are forced from their home and culture to survive and provide a better life for their family. Learn about their struggles and take action in this journey to help provide funding and raise donations for real help on the ground for the refugee crisis.', head: 'Refugee Crisis' },
         { src: '/images/journey/WIND.png', href: 'https://renewableenergy.dugut.app/', text: 'Learn how wind energy is changing our world, how fast this technology has been able to grow and become a integral part of our renewable energy and sustainability strategy! Take action and join our campaign to raise awareness for renewables and climate change!', head: 'Wind Energy ' },
         { src: '/images/journey/VIENTO.png', href: 'https://viento.dugut.app/', text: 'Aprenda sobre la energía eólica y su poder para convertirse en una fuente de energía sostenible en nuestro futuro. ¡Aprende datos interesantes y termina el viaje para desbloquear una acción sostenible!', head: 'Viento Energia Renovável ' },
-        { src: '/images/journey/LOS.png', href: 'https://planttreekids.dugut.app/world-page ', text: 'Aprenda cómo puede plantar un árbol gratis y enseñe a sus hijos sobre la reforestación sostenible y el cambio climático en el camino. ¡Guíe a su hijo a través de esta experiencia usando este divertido y atractivo viaje gamificado! ', head: 'Kids Trees' },
         { src: '/images/journey/EQUALITY.png', href: 'https://diamond.dugut.app/ ', text: 'Racial inequalities in our society affect everyone and its up to us to call it out when we see it! Take the journey and learn about some of the inequalities that many face in our society every day!', head: 'Diamond Journey' },
 
     ]
@@ -53,7 +53,7 @@ export default function Journey() {
                     <div className='flex flex-wrap m-3 items-center justify-center px-2 md:px-0 '>
 
                         {imgs.map((x, idx) => (
-                            <div key={idx} className='flex m-10 mb-8'>
+                            <div key={idx} className='flex m-10 mb-8 '>
 
 
                                 <a href={x.href} target={'blank'}>

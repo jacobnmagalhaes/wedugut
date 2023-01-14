@@ -16,7 +16,7 @@ export default function Action() {
             <div className="flex justify-center items-center flex-wrap animate-openMenu">
 
 
-                <div className="w-[180px] h-[300px]  lg:h-[270px] lg:w-[220px] lg:mt-2 cursor-pointer hover:brightness-110 relative">
+                <div className="w-[180px] h-[300px]  lg:h-[270px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative">
                     <Image
                         src={"/images/action/ACTION.webp"}
                         alt="Action"
@@ -29,7 +29,7 @@ export default function Action() {
 
 
                 <Link href="/friends" >
-                    <div className="w-[180px] h-[300px]  lg:h-[270px] lg:w-[220px] lg:mt-2 cursor-pointer hover:brightness-110 relative ">
+                    <div className="w-[180px] h-[300px]  lg:h-[270px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative ">
                         <Image
                             src={"/images/action/friends.webp"}
                             alt="Friends"
@@ -40,7 +40,7 @@ export default function Action() {
                 </Link>
 
                 <Link href="/play">
-                    <div className=" lg:flex w-[180px] h-[300px] lg:h-[270px] lg:w-[220px] lg:mt-2 cursor-pointer hover:opacity-120 hover:brightness-110 relative">
+                    <div className=" lg:flex w-[180px] h-[300px] lg:h-[270px] lg:w-[220px] md:mt-2 cursor-pointer hover:opacity-120 hover:brightness-110 relative">
                         <Image
                             src={"/images/action/GAMES.webp"}
                             alt="Games"
@@ -57,14 +57,14 @@ export default function Action() {
                         <Image
                             src={"/images/action/SHOP_BUTTON.webp"}
                             alt="Shop Button"
-                            layout="fill"mx-2
+                            layout="fill"
                             objectFit="contain"
                         />
                     </div>
                 </Link>
 
                 <Link href="/sdg" target={'blank'}>
-                    <div className="w-[180px] h-[300px]  lg:h-[265px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                    <div className="w-[180px] h-[300px]  lg:h-[265px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative">
                         <Image
                             src={"/images/action/SDGs.webp"}
                             alt="SDG"
@@ -73,12 +73,26 @@ export default function Action() {
                         />
                     </div>
                 </Link>
+                <Link href="/donation" target={'blank'}>
+                    <div className="w-[180px] h-[300px]  lg:h-[245px] lg:w-[215px] md:mt-6  cursor-pointer hover:brightness-110 relative">
+                        <Image
+                            src={"/images/donation/donatebutton.png"}
+                            alt="SDG"
+                            layout="fill"
+                            objectFit="contain"
+                        />
+
+                        <div className='relative bg-red-500 h-6 w-4/6 left-[18%] top-[15%]'>
+                            <p className='text-white flex justify-center items-center'>Coming soon</p>
+                        </div>
+                    </div>
+                </Link>
             </div>
 
 
             {/* images climate */}
             <div className='flex mt-8 flex-wrap justify-center'>
-                <div className="mr-3 w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                <div className="mr-3 w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative">
 
                     <a href="https://climatechange.dugut.app/world-page/#" target={'blank'}>
 
@@ -90,7 +104,7 @@ export default function Action() {
                         />
                     </a>
                 </div>
-                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative">
                     <a href="https://plastic.dugut.app/world-page/#" target={'blank'}>
 
                         <Image
@@ -101,7 +115,7 @@ export default function Action() {
                         />
                     </a>
                 </div>
-                <div className="w-[180px] h-[300px] m-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+                <div className="w-[180px] h-[300px] md:mt-2 lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
                     <a href="https://vou.dugut.app/world-page/" target={'blank'}>
 
                         <Image

@@ -54,7 +54,21 @@ export function MainComponent() {
           </Link>
 
 
+          {/* <Link href="/journey" target={'blank'}>
 
+            <CardComponent
+              image="/images/journey/LOS.png"
+              alt="Painel 2"
+              href="#"
+              
+              />
+          </Link> */}
+
+          <a href={'/journey'} >
+            <CardComponent
+              image="/images/journey/LOS.png"
+              alt='check' />
+          </a>
 
         </div>
 
