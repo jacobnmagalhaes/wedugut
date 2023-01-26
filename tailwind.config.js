@@ -10,6 +10,7 @@ module.exports = {
         'web':"url('/images/Kids/BackgroundWeb.png')",
         'actionModal':"url('/images/action/modal-bg.png')",
         'journey':"url('/images/journey/Background.png')",
+        "yt":"url('/images/yt/bg_image.png')"
       },
       colors: {
         'header-pattern': 'black',

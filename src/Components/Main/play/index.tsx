@@ -23,9 +23,9 @@ export default function PLayComponent() {
     return (
         <div>
 
-            <div className=' flex justify-center items-center w-1/2 h-1/4  mx-auto'>
+            <div className=' flex justify-center items-center w-1/2 h-1/4 mx-auto'>
 
-                <img src="/images/play/playgames.png" alt="" />
+                <img className='h-60' src="/images/play/playgames.png" alt="" />
             </div>
 
             <div className="flex justify-center items-center flex-wrap animate-openMenu w-11/12 ">

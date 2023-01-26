@@ -38,7 +38,11 @@ export function MainComponent() {
               href="#"
             />
           </a>
-
+          <a href={'/journey'} >
+            <CardComponent
+              image="/images/journey/LOS.png"
+              alt='check' />
+          </a>
 
           <Link href={'play'}>
 
@@ -64,11 +68,7 @@ export function MainComponent() {
               />
           </Link> */}
 
-          <a href={'/journey'} >
-            <CardComponent
-              image="/images/journey/LOS.png"
-              alt='check' />
-          </a>
+
 
         </div>
 

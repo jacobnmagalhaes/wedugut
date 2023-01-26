@@ -62,7 +62,7 @@ export function FooterComponent() {
         </a>
       </div>
       <div className="w-full flex justify-center items-center bg-black text-white font-light">
-        <p>DuGut Ltda 2022. All rights reserved ©</p>
+        <p>DuGut Ltd 2022. All rights reserved ©</p>
       </div>
     </div>
   );
