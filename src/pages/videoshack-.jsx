@@ -32,12 +32,12 @@ export default function YtMain({ data }) {
         <>
 
 
-            <HeaderComponent image={'/images/dugutopia/Header.png'} />
-            <div className='  bg-[#f4f481] w-[100vw] min-h-screen '>
+            <HeaderComponent image={'/images/homePage/Logo.webp'} />
+            <div className=' bg-gradient-to-t from-white to-[#00cc66] w-[100vw] min-h-screen '>
 
                 <div className='flex justify-center items-center'>
                     <Image
-                        src={'/images/yt/logo.png'}
+                        src={'/images/yt/logo.webp'}
                         height='400'
                         width='750'
                         className=''

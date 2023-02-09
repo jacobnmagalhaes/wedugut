@@ -7,28 +7,28 @@ export default function TakeAction() {
 
 
     let imgs = [
-        { src: '/images/takeaction/Journey.png', text: 'Go on a journey to learn about sustainable issue and solutions! (+15 Minutes)', },
-        { src: '/images/takeaction/Invite Friends.png', text: 'Invite 5 friends! (+1 Minute)' },
-        { src: '/images/takeaction/Newsletter.png', text: 'Subscribe to our news letter! (Direct)' }
+        { src: '/images/takeaction/Journey.webp', text: 'Go on a journey to learn about sustainable issue and solutions! (+15 Minutes)', },
+        { src: '/images/takeaction/Invite Friends.webp', text: 'Invite 5 friends! (+1 Minute)' },
+        { src: '/images/takeaction/Newsletter.webp', text: 'Subscribe to our news letter! (Direct)' }
     ]
 
     return (
 
-        <div className=' w-screen min-h-screen bg-[#0b3e14]'>
+        <div className=' w-screen min-h-screen bg-gradient-to-t from-white to-cyan-300'>
 
 
             <div className=' flex justify-center items-center pt-10' >
 
 
                 <img className='h-60 px-8 md:p-0'
-                    src={'images/takeaction/main .png'}
+                    src={'images/takeaction/main .webp'}
 
                 />
 
 
             </div>
 
-            <p className='text-center text-white text-2xl mb-8'>Choose your action!</p>
+            <p className='text-center text-2xl mb-8'>Choose your action!</p>
 
             <div className='flex flex-col items-center mx-1 px-2 md:px-0 '>
 
@@ -44,12 +44,12 @@ export default function TakeAction() {
 
                     />
 
-                    <div className='flex flex-col w-52 mx-3 text-white justify-center items-center'>
+                    <div className='flex flex-col w-52 mx-3 justify-center items-center'>
                         <p className=' my-1 ml-2 text-xs md:text-sm mb-2'>{imgs[0].text}</p>
 
                         <Link href='/journey' className='mt-8 -mb-8  '>
 
-                            <Image src='/images/takeaction/GOButton.png'
+                            <Image src='/images/takeaction/GOButton.webp'
                                 height='75'
                                 width='200'
                                 className=' cursor-pointer hover:brightness-110 '
@@ -60,7 +60,7 @@ export default function TakeAction() {
                 </div>
 
 
-                <div className='flex mt-2 mb-8'>
+                <div className='flex mt-2 mb-8 '>
 
                     <Image
 
@@ -70,7 +70,7 @@ export default function TakeAction() {
 
                     />
 
-                    <div className='flex flex-col w-52 mx-3 text-white justify-center items-center'>
+                    <div className='flex flex-col w-52 mx-3  justify-center items-center'>
                         <p className=' mt-1 text-xs md:text-sm w-full ml-8'>
                         Share a sustainable journey with friends!
                         </p>
@@ -88,7 +88,7 @@ export default function TakeAction() {
 
                         
                         >
-                            <Image src='/images/takeaction/GOButton.png'
+                            <Image src='/images/takeaction/GOButton.webp'
                                 height='75'
                                 width='200'
                                 className='hover:brightness-110 cursor-pointer '
@@ -110,7 +110,7 @@ export default function TakeAction() {
 
                     />
 
-                    <div className='flex flex-col w-52 mx-3 text-white justify-center items-center'>
+                    <div className='flex flex-col w-52 mx-3  justify-center items-center'>
                         <p className=' mt-1 ml-4 text-xs md:text-sm '>
                             Subscribe to our news letter!
                         </p>
@@ -120,7 +120,7 @@ export default function TakeAction() {
 
                         <a href="http://eepurl.com/hlZEQT" target={'blank'} className='mt-8 -mb-8 hover:brightness-110 cursor-pointer'>
 
-                            <Image src='/images/takeaction/GOButton.png'
+                            <Image src='/images/takeaction/GOButton.webp'
                                 height='75'
                                 width='200'
 

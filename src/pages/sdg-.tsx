@@ -1,16 +1,21 @@
 import Script from 'next/script'
 import React from 'react'
+import { HeaderComponent } from '../Components/header'
 import LayoutComponent from '../Components/Layout'
 import SdgComponent from '../Components/Main/sdg'
 
 export default function Sdg() {
     return (
         <>
-            <LayoutComponent>
+
+            <HeaderComponent image={'/images/homePage/Logo.webp'} />
+
+
+            <div className='-mt-5 bg-center bg-cover'>
 
                 <SdgComponent />
+            </div>
 
-            </LayoutComponent>
 
             <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-0GMXD0ECE2"></Script>
             <Script
@@ -26,5 +31,5 @@ export default function Sdg() {
                 }}
             />
         </>
-    ) 
+    )
 }

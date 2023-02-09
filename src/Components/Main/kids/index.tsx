@@ -11,7 +11,7 @@ export function MainComponent() {
     <main className="flex-1 flex flex-col justify-center items-center">
       <div className="h-[300px] w-[350px]  lg:h-[350px] md:w-[600px] relative cursor-pointer md:mt-5 lg:mt-10">
         <Image
-          src="/images/Kids/LogoKids.png"
+          src="/images/Kids/LogoKids.webp"
           alt="Logo Weguut"
           layout="fill"
           objectFit="contain"

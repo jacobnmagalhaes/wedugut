@@ -1,39 +1,28 @@
-import Image from 'next/image'
-import Script from 'next/script'
 import React from 'react'
-import { FooterComponent } from '../Components/footer'
-import { HeaderComponent } from '../Components/header'
-import Journey from '../Components/Main/journey'
+import Link from 'next/link'
 
-export default function JourneyMain() {
+export default function Journey() {
     return (
-        <>
-            <HeaderComponent image='/images/journey/takeactionheader.png' />
+        <div className='bg-gradient-to-t from-white to-[#3399cc] h-screen flex flex-col overflow-y-hidden'>
 
-            <Journey />
 
-            {/* footer  */}
-            <div >
-                <img
-                    src={'/images/journey/footer.png'}
 
-                />
+            <img src="images/prejourney/takejourney.webp" className=' w-8/12 lg:w-6/12 lg:h-screen m-auto ' alt="" />
+
+            <div className='h-[12vh] lg:h-[14vh] flex flex-col justify-center absolute bottom-5 md:bottom-6 w-full'>
+
+                <Link href='/journey-' >
+                    <img src="images/startup/GOButton.webp" className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
+                </Link>
+              
+                {/* <Link href='/journey-' >
+                    <img src="images/prejourney/SHAREBUTTON.webp" className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
+                </Link>
+               */}
+
+
             </div>
 
-            <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-0GMXD0ECE2"></Script>
-            <Script
-                id='google-analytics'
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-0GMXD0ECE2');
-        `,
-                }}
-            />
-        </>
-
+        </div>
     )
 }

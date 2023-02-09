@@ -8,7 +8,7 @@ export default function TakeActionMain() {
         <div>
 
 
-            <HeaderComponent image='/images/journey/takeactionheader.png' />
+<HeaderComponent image={'/images/homePage/Logo.webp'} />
 
             <TakeAction />
             {/* footer  */}

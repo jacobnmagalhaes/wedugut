@@ -21,14 +21,14 @@ export default function PLayComponent() {
 
 
     return (
-        <div>
+        <div className=''>
 
-            <div className=' flex justify-center items-center w-1/2 h-1/4 mx-auto'>
+            <div className=' flex justify-center items-center md:w-1/2 h-1/4 mx-auto'>
 
-                <img className='h-60' src="/images/play/playgames.png" alt="" />
+                <img className='h-32 mt-10 md:mt-0 md:h-72' src="/images/play/playgames.webp" alt="" />
             </div>
 
-            <div className="flex justify-center items-center flex-wrap animate-openMenu w-11/12 ">
+            <div className="flex justify-center items-center flex-wrap animate-openMenu ">
 
 
                 {games.map((x, idx) => (<a key={idx} href={x.link} target={'blank'}>

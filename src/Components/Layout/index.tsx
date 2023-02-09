@@ -18,8 +18,8 @@ export default function LayoutComponent({ children }: LayoutProps) {
       <HeaderComponent
         image={
           router.asPath === "/"
-            ? "/images/homePage/Logo.png"
-            : "/images/Kids/Logo.png"
+            ? "/images/homePage/Logo.webp"
+            : "/images/homePage/Logo.webp"
         }
       />
       <div className="flex-1">{children}</div>

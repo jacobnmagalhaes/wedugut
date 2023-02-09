@@ -31,16 +31,16 @@ export default function Journey() {
 
 
     return (
-        <>
+        <div>
 
 
-            <div className=' w-screen min-h-screen bg-journey'>
+            <div className=' w-screen min-h-screen bg-gradient-to-t from-white to-[#00cc66]'>
 
                 <div className=' flex justify-center items-center pt-10' >
 
 
                     <img className='h-60 px-3 md:p-0'
-                        src={'/images/journey/takejourney.png'}
+                        src={'/images/journey/takejourney.webp'}
 
                     />
 
@@ -67,13 +67,13 @@ export default function Journey() {
                                     />
                                 </a>
 
-                                <div className='flex flex-col w-52 mx-2 text-white justify-center items-center'>
+                                <div className='flex flex-col w-52 mx-2  justify-center items-center'>
                                     {/* <p className='text-md md:text-2xl text-center'>{x.head?x.head : ''}</p> */}
                                     <p className='text-left my-1 ml-5 text-xs md:text-sm'>{x.text}</p>
 
                                     <a href={x.href} target={'blank'} className='mt-3 hover:brightness-110'>
 
-                                        <Image src='/images/takeaction/GOButton.png'
+                                        <Image src='/images/takeaction/GOButton.webp'
                                             height='75'
                                             width='180'
                                         />
@@ -87,7 +87,7 @@ export default function Journey() {
                                         }}
                                         onClick={() => console.log("")}
                                     >
-                                        <Image src={'/images/journey/SHAREBUTTON.png'} height={50} width={150} className='cursor-pointer hover:brightness-110' />
+                                        <Image src={'/images/journey/SHAREBUTTON.webp'} height={50} width={150} className='cursor-pointer hover:brightness-110' />
 
                                     </RWebShare>
                                 </div>
@@ -104,6 +104,6 @@ export default function Journey() {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }

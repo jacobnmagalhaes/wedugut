@@ -9,9 +9,14 @@ export default function Action() {
 
     return (
         <div className="flex-1 flex flex-col justify-center items-center">
-            <h1 style={{ color: '#97b229' }} className="text-[1.2rem] lg:text-[2rem] w-[95%] tracking-wide text-center mt-[3rem] lg:w-[600px]">
-                Take Real-Life Micro Actions For Free!
-            </h1>
+            <div className="h-[300px] w-[350px]  lg:h-[350px] md:w-[600px] relative cursor-pointer md:mt-5">
+                <Image
+                    src="/images/action/actionpagetext.webp"
+                    alt="Logo Weguut"
+                    layout="fill"
+                    objectFit="contain"
+                />
+            </div>
             {/* logos */}
             <div className="flex justify-center items-center flex-wrap animate-openMenu">
 
@@ -29,7 +34,7 @@ export default function Action() {
 
 
                 <Link href="/friends" >
-                    <div className="w-[180px] h-[300px]  lg:h-[270px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative ">
+                    <div className="w-[180px] h-[236px] lg:h-[270px] lg:w-[220px] md:mt-2 cursor-pointer hover:brightness-110 relative ">
                         <Image
                             src={"/images/action/friends.webp"}
                             alt="Friends"
@@ -53,7 +58,7 @@ export default function Action() {
 
                 <Link href="/shop">
 
-                    <div className="lg:flex w-[180px] h-[300px] lg:h-[270px] lg:w-[220px] lg:mt-2 cursor-pointer hover:opacity-120 hover:brightness-110 relative">
+                    <div className="lg:flex w-[180px] h-[234px] lg:h-[270px] lg:w-[220px] lg:mt-2 cursor-pointer hover:opacity-120 hover:brightness-110 relative">
                         <Image
                             src={"/images/action/SHOP_BUTTON.webp"}
                             alt="Shop Button"
@@ -74,17 +79,17 @@ export default function Action() {
                     </div>
                 </Link>
                 <Link href="/donation" target={'blank'}>
-                    <div className="w-[180px] h-[300px]  lg:h-[245px] lg:w-[215px] md:mt-6  cursor-pointer hover:brightness-110 relative">
+                    <div className="w-[180px] h-[215px] lg:h-[240px] lg:w-[215px] mt-6 md:mt-9  cursor-pointer hover:brightness-110 relative">
                         <Image
-                            src={"/images/donation/donatebutton.png"}
+                            src={"/images/donation/donatebutton.webp"}
                             alt="SDG"
                             layout="fill"
                             objectFit="contain"
                         />
 
-                        <div className='relative bg-red-500 h-6 w-4/6 left-[18%] top-[15%]'>
+                        {/* <div className='relative bg-red-500 h-6 w-4/6 left-[18%] top-[15%]'>
                             <p className='text-white flex justify-center items-center'>Coming soon</p>
-                        </div>
+                        </div> */}
                     </div>
                 </Link>
             </div>

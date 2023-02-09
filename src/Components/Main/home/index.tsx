@@ -10,13 +10,13 @@ export default function HomePageComponent() {
 
 
   return (
-    <div className="flex-1 flex flex-col justify-center items-center">
-      <h1 className="text-[2.2rem] lg:text-[3.3rem] w-[95%] tracking-wide text-white text-center mt-[3rem] lg:w-[600px]">
-        CHANGE YOUR FUTURE
-        <p> 1 MICRO-ACTION  </p>
-        AT A TIME!
-      </h1>
-      <div className="flex justify-center items-center flex-wrap animate-openMenu">
+    <div className="flex-1 flex flex-col justify-center items-center min-h-screen">
+      <div className=' flex justify-center items-center w-8/12 sm:w-1/2 h-2/5  mx-auto lg:-mt-40'>
+
+        <img className='h-32 mt-10 md:my-10 md:h-60' src="/images/startup/App Header.webp" alt="" />
+      </div>
+
+      <div className="flex justify-center items-center flex-wrap animate-openMenu ">
 
 
         <div className="-mt-8 w-[180px] h-[300px]  lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
@@ -35,7 +35,7 @@ export default function HomePageComponent() {
 
         <Link href='/friends'>
 
-          <div className="-mt-8 w-[180px] h-[300px]  lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
+          <div className="-mt-8 w-[180px] h-[300px] lg:h-[350px] lg:w-[220px] cursor-pointer hover:brightness-110 relative">
             <Image
               src={"/images/homePage/friends.webp"}
               alt="Friends"
@@ -45,7 +45,7 @@ export default function HomePageComponent() {
           </div>
         </Link>
 
-        <div className="-mt-6 md:-mt-8 w-[180px] h-[300px] lg:h-[350px] lg:w-[220px] cursor-pointer hover:opacity-120 hover:brightness-110 relative">
+        <div className="md:-mt-5 w-[180px] h-[238px] lg:mb-2 lg:h-[288px] lg:w-[220px] cursor-pointer hover:opacity-120 hover:brightness-110 relative">
           <Image
             src={"/images/homePage/kids.webp"}
             alt="Kids"
@@ -56,17 +56,15 @@ export default function HomePageComponent() {
         </div>
 
         <Link href='/donation'>
-          <div className=" w-[180px] h-[300px] lg:h-[350px] lg:w-[220px] cursor-pointer hover:opacity-120 hover:brightness-110 relative">
+          <div className=" mt-4 sm:mt-0 w-[180px] h-[300px] lg:mb-2 lg:h-[266px] lg:w-[220px] cursor-pointer hover:opacity-120 hover:brightness-110 relative">
             <Image
-              src={"/images/donation/donatebutton.png"}
+              src={"/images/donation/donatebutton.webp"}
               alt="Dugotopia"
               layout="fill"
               objectFit="contain"
 
             />
-            <div className='relative bg-red-500 h-6 w-4/6 left-[18%] top-[15%]'>
-              <p className='text-white flex justify-center items-center'>Coming soon</p>
-            </div>
+            
           </div>
         </Link>
 
@@ -74,9 +72,9 @@ export default function HomePageComponent() {
 
 
         <Link href='/videoshack'>
-          <div className="  lg:flex w-[180px] h-[300px] lg:h-[350px] lg:w-[220px] cursor-pointer hover:opacity-120 hover:brightness-110 relative">
+          <div className="xl:mb-2  lg:flex w-[180px] h-[300px] lg:h-[350px] lg:w-[220px] cursor-pointer hover:opacity-120 hover:brightness-110 relative">
             <Image
-              src={"/images/homePage/videoshack.png"}
+              src={"/images/homePage/videoshack.webp"}
               alt="Nft"
               layout="fill"
               objectFit="contain"
@@ -85,7 +83,7 @@ export default function HomePageComponent() {
         </Link>
 
         <Link href='/shop'>
-          <div className="mb-5 md:mb-10 lg:flex w-[180px] h-[300px] lg:h-[300px] lg:w-[220px] lg:mt-4 cursor-pointer hover:opacity-120 hover:brightness-110 relative">
+          <div className=" mb-4 md:mb-10 lg:flex w-[180px] h-[233px]  lg:h-[286px] lg:w-[220px] lg:mt-5 xl:mt-3 cursor-pointer hover:opacity-120 hover:brightness-110 relative">
             <Image
               src={"/images/homePage/SHOP_BUTTON.webp"}
               alt="Shop Button"

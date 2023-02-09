@@ -94,16 +94,16 @@ export default function SdgComponent() {
 
 
   return (
-    <div className=''>
+    <div className='bg-gradient-to-t from-white to-[#00cc66]'>
 
-      <div className=' flex justify-center items-center w-1/2 h-1/4  mx-auto mt-5'>
+      <div className=' flex justify-center items-center md:w-1/2 h-1/4   mx-auto mt-5'>
 
-        <img src="/images/sdg/sdgmain.png" alt="" />
+        <img src="/images/sdg/sdgmain.webp" alt="" className='mt-10 xl:mt-10 xl:h-72' />
       </div>
 
       {/* <h1 className='text-center text-white text-5xl my-2'>SDGs:</h1> */}
-      <p className='text-white w-3/4 m-auto md:text-2xl'>The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including poverty, inequality, climate change, environmental degradation, peace and justice. Learn more and take action.
-      </p>
+      {/* <p className=' w-3/4 m-auto md:text-2xl'>The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including poverty, inequality, climate change, environmental degradation, peace and justice. Learn more and take action.
+      </p> */}
 
 
       <div className="  flex flex-col justify-around items-center ">

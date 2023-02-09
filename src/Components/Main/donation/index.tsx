@@ -18,13 +18,13 @@ export default function MainDonation() {
         <button className='bg-red-500 hover:bg-red-600 py-3 px-5 mt-5 rounded-md ' onClick={() => setpopup(false)}>Close</button>
       </div>} */}
 
-      <div className=' w-screen min-h-screen bg-journey'>
+      <div className=' w-screen min-h-screen'>
 
         <div className=' flex justify-center items-center pt-10' >
 
 
           <img className='h-36 px-3 md:p-0'
-            src={'/images/donation/logo.png'}
+            src={'/images/donation/logo.webp'}
 
           />
 
@@ -40,7 +40,7 @@ export default function MainDonation() {
               <div key={idx} className='flex m-5 mb-8 '>
 
 
-                <a href={x.href} target={'blank'}>
+                <a href={x.href} target={'blank'} className='relative'>
 
                   <Image
                     src={x.src}
@@ -49,9 +49,12 @@ export default function MainDonation() {
                     className='cursor-pointer hover:brightness-110 '
 
                   />
+                  <div className='relative bg-red-500 h-6 w-5/6 bottom-[20%] left-[5%] md:left-[10%] md:bottom-[60%]'>
+                    <p className='text-white flex justify-center items-center'>Coming soon</p>
+                  </div>
                 </a>
 
-                <div className='flex flex-col w-52 mx-2 text-white justify-center items-center'>
+                <div className='flex flex-col w-52 mx-2  justify-center items-center'>
                   <p className='text-left my-1 ml-5 text-xs md:text-sm'>{x.text}</p>
 
 
@@ -65,7 +68,7 @@ export default function MainDonation() {
 
                   <a href='' target={'blank'}>
 
-                    <Image src={'/images/journey/SHAREBUTTON.png'} height={50} width={150} className='cursor-pointer hover:brightness-110  ' />
+                    <Image src={'/images/donation/share.webp'} height={50} width={150} className='cursor-pointer hover:brightness-110  ' />
 
                   </a>
 
