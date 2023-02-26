@@ -35,7 +35,7 @@ const Popup: FC = () => {
             </p>
 
             <h3 className='uppercase text-center text-sm my-10'>Choose your action</h3>
-            <div className='flex items-center relative gap-12 px-12'>
+            <div className='flex items-center relative gap-12 px-32'>
               <img className='w-2/5' src='/images/main/Journey.png' />
               <div className='flex flex-col w-3/5'>
                 <p className='text-sm mb-2'>
@@ -46,7 +46,7 @@ const Popup: FC = () => {
               </div>
             </div>
 
-            <div className='flex items-center relative gap-12 px-12'>
+            <div className='flex items-center relative gap-12  px-32'>
               <img className='w-2/5' src='/images/main/invite.png' />
               <div className='flex flex-col w-3/5'>
                 <p className='text-sm mb-2'>
@@ -57,7 +57,7 @@ const Popup: FC = () => {
               </div>
             </div>
 
-            <div className='flex items-center relative gap-12 px-12'>
+            <div className='flex items-center relative gap-12  px-32'>
               <img className='w-2/5' src='/images/main/Newsletter.png' />
               <div className='flex flex-col w-3/5'>
                 <p className='text-sm mb-2'>
