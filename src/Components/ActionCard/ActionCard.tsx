@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 import cn from 'classnames'
-import Link from 'next/link'
+import { RWebShare } from 'react-web-share'
 
 interface IProps {
   width?: '1' | '1/2' | '1/4'
@@ -38,17 +38,24 @@ const ActionCard: FC<IProps> = ({
               <span className='font-bold'>{points}</span>pts
             </h2>
           )}
-          <Image
-            src='/images/main/share-icon.png'
-            className='cursor-pointer'
-            width={32}
-            height={32}
-            unoptimized
-          />
+          <RWebShare
+            data={{
+              text: `Join us in taking action, when you finish this journey you will unlock a sponsored donation for a specific sustainable action, Let's be part of the solution together:`,
+              url: `${link}`,
+              title: text,
+            }}>
+            <Image
+              src='/images/main/share-icon.png'
+              className='cursor-pointer'
+              width={32}
+              height={32}
+              unoptimized
+            />
+          </RWebShare>
         </div>
       )}
       <div className='relative'>
-        <Link href={link}>
+        <a href={link} target='_blank'>
           <Image
             src={image}
             width={imgWidth}
@@ -56,7 +63,7 @@ const ActionCard: FC<IProps> = ({
             layout='responsive'
             className='cursor-pointer'
           />
-        </Link>
+        </a>
       </div>
       {text && (
         <p className='mt-1'>

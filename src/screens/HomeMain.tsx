@@ -122,7 +122,7 @@ const HomeMain: FC = () => {
         className='mb-20'>
         <ActionCard
           image='/images/main/SHOP.png'
-          link='/'
+          link='https://friends.dugut.app/shop'
           width='1'
           imgHeight={240}
           imgWidth={800}
@@ -148,10 +148,10 @@ const HomeMain: FC = () => {
         ))}
       </ActionSection>
 
-      <ActionSection title='Shop & give' subtitle='Every purchase takes an action!'>
+      <ActionSection title='Just play mini games' subtitle='have fun and learn!'>
         <ActionCard
           image='/images/main/Games.png'
-          link='/'
+          link='/play-'
           width='1'
           imgHeight={295}
           imgWidth={800}
