@@ -15,13 +15,13 @@ const Popup: FC = () => {
           <div className='bg-black opacity-70 w-full h-full'></div>
           <div
             ref={ref}
-            className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-2xl z-30 flex flex-col items-center justify-center text-white'>
+            className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 popup max-w-2xl z-30 flex flex-col items-center justify-center text-white'>
             <img src='/images/main/MAIN PAGE POPUP.png' />
-            <p className='font-bold mb-4'>
+            <p className='font-bold mb-4 text-sm md:text-base'>
               Help our volunteers to create a better future for all of us! All our content is
               created by people like you that want to become part of the solution!
             </p>
-            <p>
+            <p className='text-sm md:text-base'>
               Go on a journey and learn about our most pressing issues and share your knowledge with
               your friends and family.{' '}
               <b>By engaging in a journey, you can take real-life actions</b> that are performed by
@@ -34,37 +34,37 @@ const Popup: FC = () => {
               </b>
             </p>
 
-            <h3 className='uppercase text-center text-sm my-10'>Choose your action</h3>
-            <div className='flex items-center relative gap-12 px-32'>
-              <img className='w-2/5' src='/images/main/Journey.png' />
+            <h3 className='uppercase text-center text-sm mt-9 mb-6'>Choose your action</h3>
+            <div className='flex items-center relative gap-12 md:px-12'>
+              <img className='w-24 lg:w-32' src='/images/main/Journey.png' />
               <div className='flex flex-col w-3/5'>
                 <p className='text-sm mb-2'>
                   Go on an action journey to learn about sustainable issues and solutions and take a
                   real-live action! (+15 Minutes)
                 </p>
-                <img src='/images/main/Gobutton-1.webp' className='w-full cursor-pointer' />
+                <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
               </div>
             </div>
 
-            <div className='flex items-center relative gap-12  px-32'>
-              <img className='w-2/5' src='/images/main/invite.png' />
+            <div className='flex items-center relative gap-12 md:px-12'>
+              <img className='w-24 lg:w-32' src='/images/main/invite.png' />
               <div className='flex flex-col w-3/5'>
                 <p className='text-sm mb-2'>
                   Go on an action journey to learn about sustainable issues and solutions and take a
                   real-live action! (+15 Minutes)
                 </p>
-                <img src='/images/main/Gobutton-1.webp' className='w-full cursor-pointer' />
+                <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
               </div>
             </div>
 
-            <div className='flex items-center relative gap-12  px-32'>
-              <img className='w-2/5' src='/images/main/Newsletter.png' />
+            <div className='flex items-center relative gap-12 md:px-12'>
+              <img className='w-24 lg:w-32' src='/images/main/Newsletter.png' />
               <div className='flex flex-col w-3/5'>
                 <p className='text-sm mb-2'>
                   Go on an action journey to learn about sustainable issues and solutions and take a
                   real-live action! (+15 Minutes)
                 </p>
-                <img src='/images/main/Gobutton-1.webp' className='w-full cursor-pointer' />
+                <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
               </div>
             </div>
           </div>
