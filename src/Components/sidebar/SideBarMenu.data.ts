@@ -38,7 +38,7 @@ export const sidebarNavItems = [
   {
     id: 7,
     title: 'Play games',
-    link: '/games',
+    link: '/play',
     iconSrc: '/images/sidebar/games.png',
   },
   {
