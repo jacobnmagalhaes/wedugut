@@ -2,11 +2,9 @@ import Image from 'next/image'
 import { FC } from 'react'
 import ActionCard from '../Components/ActionCard/ActionCard'
 import ActionSection from '../Components/ActionSection/ActionSection'
-import {
-  kidsActionJourneysFirst,
-  kidsFeaturedActionJourneys,
-  kidsLongVideos,
-} from '../data/kids.data'
+import Video from '../Components/Video/Video'
+import { kidsActionJourneysFirst, kidsShorts, kidsLongVideos } from '../data/kids.data'
+import { shortsSocialsIconLinks } from '../data/socials.data'
 
 const KidsZone: FC = () => {
   return (
@@ -58,29 +56,15 @@ const KidsZone: FC = () => {
         cardWrapperClasses='lg:gap-12 xl:!gap-14 flex-wrap'
         title='Short videos'
         subtitle='See what our volunteers have to say!'>
-        {kidsFeaturedActionJourneys.map(({ link, id, image }) => (
-          <div className='w-wrap-card'>
-            <ActionCard
-              key={id}
-              width='1'
-              image={image}
-              link={link}
-              imgWidth={285}
-              imgHeight={468}
-            />
-            <div className='mt-2 flex gap-4 items-center'>
-              <a href='https://www.instagram.com/wedugut/' target={'blank'}>
-                <Image src='/images/common/instagram.svg' width={24} height={24} />
-              </a>
-              <a href='https://www.tiktok.com/@wedugut' target={'blank'}>
-                <Image src='/images/common/tiktok.svg' width={24} height={24} />
-              </a>
-              <a href='https://www.facebook.com/wedugut/' target={'blank'}>
-                <Image src='/images/common/facebook.svg' width={24} height={24} />
-              </a>
-              <a href='https://www.youtube.com/channel/UCyg87GirrddSvia8TqeWepA' target={'blank'}>
-                <Image src='/images/common/youtube.svg' width={24} height={24} />
-              </a>
+        {kidsShorts.map(({ link, id, name, shareLink }) => (
+          <div key={id} className='w-wrap-card'>
+            <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
+            <div className='mt-2 ml-2 flex gap-4 items-center'>
+              {shortsSocialsIconLinks.map(({ name, imgSrc, link }) => (
+                <a key={name} href={link} target={'blank'}>
+                  <Image src={imgSrc} width={24} height={24} />
+                </a>
+              ))}
             </div>
           </div>
         ))}

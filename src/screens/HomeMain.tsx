@@ -1,7 +1,7 @@
+import Image from 'next/image'
 import { FC } from 'react'
 import ActionCard from '../Components/ActionCard/ActionCard'
 import ActionSection from '../Components/ActionSection/ActionSection'
-import Popup from '../Components/Popup/Popup'
 import Video from '../Components/Video/Video'
 import {
   actionJourneyFirst,
