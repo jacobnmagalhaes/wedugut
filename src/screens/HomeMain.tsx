@@ -191,7 +191,7 @@ const HomeMain: FC = () => {
       <ActionSection title='Just play mini games' subtitle='have fun and learn!'>
         <ActionCard
           image='/images/main/Games.png'
-          link='/play-'
+          link='/play'
           width='1'
           imgHeight={295}
           imgWidth={800}
