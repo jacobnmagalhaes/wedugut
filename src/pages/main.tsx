@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
+import { RWebShare } from 'react-web-share'
+
 import { FooterComponent } from '../Components/footer'
 import { HeaderComponent } from '../Components/header'
-import LayoutComponent from '../Components/Layout'
-import HomePageComponent from '../Components/Main/home'
 import Popup from '../Components/Popup/Popup'
 import SideBarMenu from '../Components/sidebar/SideBarMenu'
 import HomeMain from '../screens/HomeMain'
@@ -39,7 +40,9 @@ export default function HomePage() {
                 Go on an action journey to learn about sustainable issues and solutions and take a
                 real-live action! (+15 Minutes)
               </p>
-              <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
+              <Link href='/journey'>
+                <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
+              </Link>
             </div>
           </div>
 
@@ -47,10 +50,16 @@ export default function HomePage() {
             <img className='w-24 lg:w-32' src='/images/main/invite.png' />
             <div className='flex flex-col w-3/5'>
               <p className='text-sm mb-2'>
-                Go on an action journey to learn about sustainable issues and solutions and take a
-                real-live action! (+15 Minutes)
+                Share an action journey with your friends and take a real-live action! (+2 Minutes)
               </p>
-              <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
+              <RWebShare
+                data={{
+                  text: 'Junte-se a nós para tomar medidas que permitam aos jovens estudantes Portugueses fazer do mundo um lugar melhor!  /  Join us in taking action to enable young Portugese students to make the world a better place!:',
+                  url: 'https://vou.dugut.app/world-page',
+                  title: 'Invite your friends',
+                }}>
+                <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
+              </RWebShare>
             </div>
           </div>
 
@@ -58,10 +67,11 @@ export default function HomePage() {
             <img className='w-24 lg:w-32' src='/images/main/Newsletter.png' />
             <div className='flex flex-col w-3/5'>
               <p className='text-sm mb-2'>
-                Go on an action journey to learn about sustainable issues and solutions and take a
-                real-live action! (+15 Minutes)
+                Subscribe to our newsletter and take a real-live action! (+1 Minute)
               </p>
-              <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
+              <a href='http://eepurl.com/hlZEQT' target='_blank'>
+                <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
+              </a>
             </div>
           </div>
         </>

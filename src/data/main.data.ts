@@ -62,7 +62,7 @@ export const kidsForKids = {
   id: 7,
   name: '',
   link: '/kids',
-  image: '/images/main/KIDS BANNER.png',
+  image: '/images/main/KIDS ZONE.webp',
   audience: 'Kids',
 }
 
@@ -102,6 +102,29 @@ export const actionJourneysSecond = [
     points: 500,
     text: 'Create Awareness!',
     audience: 'Adult',
+  },
+]
+
+export const shortsVideos = [
+  {
+    name: 'RECYCLING PLASTIC',
+    link: '6J2uadldpZw',
+    shareLink: 'https://youtube.com/shorts/6J2uadldpZw?feature=share',
+  },
+  {
+    name: 'WILDLIFE TRADE (PART 1)',
+    link: 'ElN1o-dFL6A',
+    shareLink: 'https://youtube.com/shorts/ElN1o-dFL6A?feature=share',
+  },
+  {
+    name: 'EVERY ACTION COUNTS!',
+    link: 'W6Byoq5l9bs',
+    shareLink: 'https://youtube.com/shorts/W6Byoq5l9bs?feature=share',
+  },
+  {
+    name: 'Save the Amazon',
+    link: 'GOpZX4IZRF8',
+    shareLink: 'https://youtube.com/shorts/GOpZX4IZRF8?feature=share',
   },
 ]
 
