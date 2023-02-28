@@ -40,11 +40,11 @@ const SideBarMenu: FC = () => {
 
       <ul className='mt-8'>
         {sidebarAdditionalLinks.map(({ id, title, link }) => (
-          <li className='uppercase text-base mb-4 last-of-type:mb-0 cursor-pointer text-gray-600'>
-            <Link key={id} href={link}>
+          <Link key={id} href={link}>
+            <li className='uppercase text-base mb-4 last-of-type:mb-0 cursor-pointer text-gray-600'>
               {title}
-            </Link>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
 
