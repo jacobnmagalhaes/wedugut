@@ -26,7 +26,7 @@ export const sidebarNavItems = [
   {
     id: 5,
     title: 'Donate',
-    link: '/donate',
+    link: '/donation',
     iconSrc: '/images/sidebar/donate.png',
   },
   {
