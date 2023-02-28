@@ -44,7 +44,7 @@ export const sidebarNavItems = [
   {
     id: 8,
     title: 'SDGS',
-    link: '/sdgs',
+    link: '/sdg',
     iconSrc: '/images/sidebar/sdgs.png',
   },
 ]
