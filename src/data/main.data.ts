@@ -144,6 +144,25 @@ export const actionJourneysThird = [
   },
 ]
 
+export const youtubeVideos = [
+  {
+    _id: '63d28e35e82e9c473486991b',
+    name: 'DUGUT VISION',
+    link: 'J6201YtiXTQ',
+    shareLink: 'https://www.youtube.com/watch?v=J6201YtiXTQ',
+    text: 'Learn about the vision at WEDuGut to aid the younger generations in building a new world!',
+    __v: 0,
+  },
+  {
+    _id: '63d28ed3e82e9c4734869921',
+    name: 'VO.U. Portugal',
+    link: 'fPiCaDLyEz8',
+    shareLink: 'https://www.youtube.com/watch?v=fPiCaDLyEz8',
+    text: 'Support Portugese Student Volunteers at VO.U. and their efforts to make Portugal more sustainable! ',
+    __v: 0,
+  },
+]
+
 export const actionJourneysFourth = [
   {
     id: 16,

@@ -3,6 +3,7 @@ import { FC } from 'react'
 import ActionCard from '../Components/ActionCard/ActionCard'
 import ActionSection from '../Components/ActionSection/ActionSection'
 import Popup from '../Components/Popup/Popup'
+import Video from '../Components/Video/Video'
 import {
   actionJourneyFirst,
   actionJourneysFifth,
@@ -11,6 +12,7 @@ import {
   actionJourneysThird,
   featuredActionJourneys,
   kidsForKids,
+  youtubeVideos,
 } from '../data/main.data'
 
 const HomeMain: FC = () => {
@@ -95,6 +97,15 @@ const HomeMain: FC = () => {
             imgWidth={285}
             imgHeight={468}
           />
+        ))}
+      </ActionSection>
+
+      <ActionSection
+        title='Long videos'
+        subtitle='See the result of your Actions!'
+        className='mb-20'>
+        {youtubeVideos.map(({ _id, link, text, name, shareLink }) => (
+          <Video key={_id} width='1/2' text={text} link={link} name={name} shareLink={shareLink} />
         ))}
       </ActionSection>
 

@@ -8,15 +8,11 @@ import SideBarMenu from '../Components/sidebar/SideBarMenu'
 import HomeMain from '../screens/HomeMain'
 
 export default function HomePage() {
-  const [modalIsOpen, setmodalIsOpen] = useState(true)
-  const [animation, setAnimation] = useState(true)
+  const [isVisible, setIsVisible] = useState(true)
 
-  function handleCloseModal() {
-    setmodalIsOpen(() => false)
-  }
   return (
     <>
-      <Popup>
+      <Popup isOpen={isVisible} setIsOpen={setIsVisible}>
         <>
           <img src='/images/main/MAIN PAGE POPUP.png' />
           <p className='font-bold mb-4 text-sm md:text-base'>

@@ -3,17 +3,18 @@ import useOutsideClick from '../../hooks/useOutsideClick'
 
 interface IProps {
   children: ReactNode
+  isOpen: boolean
+  setIsOpen: (b: boolean) => void
 }
 
-const Popup: FC<IProps> = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(true)
+const Popup: FC<IProps> = ({ children, isOpen, setIsOpen }) => {
   const ref = useRef(null)
 
-  useOutsideClick(ref, () => setIsVisible(false))
+  useOutsideClick(ref, () => setIsOpen(false))
 
   return (
     <>
-      {isVisible && (
+      {isOpen && (
         <div className='fixed top-0 left-0 w-full h-full z-20'>
           <div className='bg-black opacity-70 w-full h-full'></div>
           <div
