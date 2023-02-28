@@ -4,7 +4,7 @@ import cn from 'classnames'
 import { RWebShare } from 'react-web-share'
 
 interface IProps {
-  width?: '1' | '1/2' | '1/4'
+  width?: '1' | '1/2' | '1/4' | '1/4-wrap'
   link: string
   image: string
   points?: number
@@ -30,6 +30,7 @@ const ActionCard: FC<IProps> = ({
         'w-full': width === '1',
         'w-1/2': width === '1/2',
         'w-1/4': width === '1/4',
+        'w-wrap-card': width === '1/4-wrap',
       })}>
       {isShareRow && (
         <div className={`flex ${points ? 'justify-between' : 'justify-end'} items-center `}>

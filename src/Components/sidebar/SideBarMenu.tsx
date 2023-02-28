@@ -9,7 +9,7 @@ const SideBarMenu: FC = () => {
       <nav>
         <ul className='pb-8 border-b-2 border-gray-400'>
           {sidebarNavItems.map(({ id, title, link, iconSrc }) => (
-            <Link key={id} href={link}>
+            <Link key={id + title} href={link}>
               <li className='uppercase text-base mb-4 last-of-type:mb-0 cursor-pointer flex items-center'>
                 <div className='w-8 flex justify-center items-center'>
                   <img
@@ -31,7 +31,7 @@ const SideBarMenu: FC = () => {
         <h3 className='mb-8 text-lg font-semibold text-center'>Connect</h3>
         <div className='flex flex-wrap gap-4'>
           {sidebarSocialIcons.map(({ link, iconSrc, id, alt }) => (
-            <Link key={id} href={link}>
+            <Link key={id + link} href={link}>
               <img src={iconSrc} alt={alt} width={50} height={50} className='cursor-pointer' />
             </Link>
           ))}
