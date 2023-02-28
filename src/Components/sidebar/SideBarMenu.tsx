@@ -5,7 +5,7 @@ import { sidebarAdditionalLinks, sidebarNavItems, sidebarSocialIcons } from './S
 
 const SideBarMenu: FC = () => {
   return (
-    <div className='bg-white py-24 pl-10 pr-6 w-52'>
+    <div className='bg-white py-24 pl-10 pr-6 w-52 min-w-[200px]'>
       <nav>
         <ul className='pb-8 border-b-2 border-gray-400'>
           {sidebarNavItems.map(({ id, title, link, iconSrc }) => (

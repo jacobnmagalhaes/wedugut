@@ -40,7 +40,7 @@ const Video: FC<IProps> = ({ width = '1/2', link, name, text, shareLink }) => {
         <iframe
           src={`https://www.youtube.com/embed/${link}`}
           width='100%'
-          height='300px'
+          className='2xl:h-[450px] xl:h-[400px] lg:h-[350px] h-[300px]'
           title='YouTube video player'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>
       </div>
