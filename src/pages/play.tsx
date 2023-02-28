@@ -1,46 +1,50 @@
-import Link from 'next/link'
+import Image from 'next/image'
 import Script from 'next/script'
-import React from 'react'
+import React, { useState } from 'react'
+import { FooterComponent } from '../Components/footer'
+import { HeaderComponent } from '../Components/header'
+import Popup from '../Components/Popup/Popup'
+import SideBarMenu from '../Components/sidebar/SideBarMenu'
+import Play from '../screens/Play'
 
 export default function PlayRedirect() {
-    return (
-        <div className='bg-gradient-to-t from-white to-[#3399cc] h-screen flex flex-col overflow-y-hidden'>
+  const [isVisible, setIsVisible] = useState(true)
 
-
-            <img src="images/startup/play.webp" className='h-5/6  mx-auto mt-24  ' alt="" />
-
-            <div className='h-[12vh] lg:h-[14vh] flex flex-col justify-center absolute bottom-5 md:bottom-6 w-full'>
-
-                <Link href='/play-' className='mb-2'>
-                    <img src="images/startup/GOButton.webp" className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
-                </Link>
-
-
-
-            </div>
-
-
-            {/* footer  */}
-            {/* <div className='h-[8vh] flex justify-center items-end' >
-                <img
-                    src={'/images/journey/footer.png'}
-
-                />
-            </div> */}
-
-            <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-0GMXD0ECE2"></Script>
-            <Script
-                id='google-analytics'
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
+  return (
+    <>
+      <Popup isOpen={isVisible} setIsOpen={setIsVisible}>
+        <>
+          <>
+            <Image src='/images/play/GAME PAGE POPUP.png' width={2211} height={2594} />
+            <img
+              src='/images/main/Gobutton-1.webp'
+              className='w-44 cursor-pointer'
+              onClick={() => setIsVisible(false)}
+            />
+          </>
+        </>
+      </Popup>
+      <HeaderComponent image={'/images/homePage/Logo.webp'} />{' '}
+      <div className='min-h-[100vh] flex'>
+        <SideBarMenu />
+        <Play />
+      </div>
+      <FooterComponent />
+      <Script
+        strategy='afterInteractive'
+        src='https://www.googletagmanager.com/gtag/js?id=G-0GMXD0ECE2'></Script>
+      <Script
+        id='google-analytics'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag() { dataLayer.push(arguments); }
                     gtag('js', new Date());
                     gtag('config', 'G-0GMXD0ECE2');
         `,
-                }}
-            />
-        </div>
-    )
+        }}
+      />
+    </>
+  )
 }
