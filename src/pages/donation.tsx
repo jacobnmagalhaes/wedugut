@@ -15,10 +15,10 @@ export default function Donation() {
       <Popup isOpen={isVisible} setIsOpen={setIsVisible}>
         <>
           <>
-            <Image src='/images/kids-zone/KIDS PAGE POPUP.png' width={2157} height={2636} />
+            <Image src='/images/donation/DONATE PAGE POPUP.png' width={2207} height={2713} />
             <img
               src='/images/main/Gobutton-1.webp'
-              className='w-44 cursor-pointer'
+              className='w-44 cursor-pointer hover:brightness-110'
               onClick={() => setIsVisible(false)}
             />
           </>
