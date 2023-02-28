@@ -12,8 +12,10 @@ import {
   actionJourneysThird,
   featuredActionJourneys,
   kidsForKids,
+  shortsVideos,
   youtubeVideos,
 } from '../data/main.data'
+import { longSocialsIconLinks, shortsSocialsIconLinks } from '../data/socials.data'
 
 const HomeMain: FC = () => {
   return (
@@ -83,6 +85,24 @@ const HomeMain: FC = () => {
       </ActionSection>
 
       <ActionSection
+        title='Shorts videos'
+        subtitle='See what our volunteers have to say!'
+        className='mb-20'>
+        {shortsVideos.map(({ link, name, shareLink }) => (
+          <div key={link} className='w-wrap-card'>
+            <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
+            <div className='mt-2 ml-2 flex gap-4 items-center'>
+              {shortsSocialsIconLinks.map(({ name, imgSrc, link }) => (
+                <a key={name} href={link} target={'blank'}>
+                  <Image src={imgSrc} width={24} height={24} />
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </ActionSection>
+
+      <ActionSection
         title='Action journeys'
         subtitle='Learn about issues and take action!'
         className='mb-20'>
@@ -105,7 +125,16 @@ const HomeMain: FC = () => {
         subtitle='See the result of your Actions!'
         className='mb-20'>
         {youtubeVideos.map(({ _id, link, text, name, shareLink }) => (
-          <Video key={_id} width='1/2' text={text} link={link} name={name} shareLink={shareLink} />
+          <div key={_id} className='w-1/2'>
+            <Video width='1' text={text} link={link} name={name} shareLink={shareLink} />
+            <div className='mt-2 ml-2 flex gap-4 items-center'>
+              {longSocialsIconLinks.map(({ name, imgSrc, link }) => (
+                <a key={name} href={link} target={'blank'}>
+                  <Image src={imgSrc} width={24} height={24} />
+                </a>
+              ))}
+            </div>
+          </div>
         ))}
       </ActionSection>
 
