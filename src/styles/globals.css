@@ -6,8 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -26,5 +26,31 @@ a {
   body {
     color: black;
     background: white;
+  }
+}
+
+.popup {
+  width: 650px;
+}
+
+.w-wrap-card {
+  flex: 1 0 20.5%;
+}
+
+@media (max-width: 1280px) {
+  .w-wrap-card {
+    flex: 1 0 19%;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 500px;
+  }
+}
+
+@media (max-width: 567px) {
+  .popup {
+    width: 350px;
   }
 }

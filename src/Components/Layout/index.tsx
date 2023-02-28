@@ -1,29 +1,26 @@
-import { useRouter } from "next/router";
-import React, { ReactNode } from "react";
-import { FooterComponent } from "../footer";
-import { HeaderComponent } from "../header";
+import { useRouter } from 'next/router'
+import React, { ReactNode } from 'react'
+import { FooterComponent } from '../footer'
+import { HeaderComponent } from '../header'
+import SideBarMenu from '../sidebar/SideBarMenu'
 
 interface LayoutProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export default function LayoutComponent({ children }: LayoutProps) {
-  const router = useRouter(); 
+  const router = useRouter()
 
   return (
     <div
-      className="h-full min-h-screen w-full font-bold flex flex-col bg-mobile bg-no-repeat 
-    bg-center bg-cover lg:bg-web font-pt-sans"
-    >
+      className='h-full min-h-screen w-full font-bold flex flex-col bg-mobile bg-no-repeat 
+    bg-center bg-cover lg:bg-web font-pt-sans'>
       <HeaderComponent
-        image={
-          router.asPath === "/"
-            ? "/images/homePage/Logo.webp"
-            : "/images/homePage/Logo.webp"
-        }
+        image={router.asPath === '/' ? '/images/homePage/Logo.webp' : '/images/homePage/Logo.webp'}
       />
-      <div className="flex-1">{children}</div>
+      <SideBarMenu />
+      <div className='flex-1'>{children}</div>
       <FooterComponent />
     </div>
-  );
+  )
 }
