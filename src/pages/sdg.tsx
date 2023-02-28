@@ -18,7 +18,7 @@ export default function SdgRedirect() {
           <Image src='/images/sdg/SDG PAGE POPUP.png' width={2226} height={2679} />
           <img
             src='/images/main/Gobutton-1.webp'
-            className='w-44 cursor-pointer'
+            className='w-44 cursor-pointer hover:brightness-110 duration-100'
             onClick={() => setIsVisible(false)}
           />
         </>
