@@ -37,6 +37,10 @@ a {
   flex: 1 0 20.5%;
 }
 
+.w-wrap-card-2 {
+  flex: 1 0 45%;
+}
+
 @media (max-width: 1280px) {
   .w-wrap-card {
     flex: 1 0 27%;
@@ -49,6 +53,10 @@ a {
   }
   .w-wrap-card {
     flex: 1 0 48%;
+  }
+
+  .w-wrap-card-2 {
+    flex: 1 0 95%;
   }
 }
 

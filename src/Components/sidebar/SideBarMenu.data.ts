@@ -14,7 +14,7 @@ export const sidebarNavItems = [
   {
     id: 3,
     title: 'Videos',
-    link: '/videos',
+    link: '/videoshack',
     iconSrc: '/images/sidebar/videos.png',
   },
   {
