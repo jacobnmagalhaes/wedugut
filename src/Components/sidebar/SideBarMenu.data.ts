@@ -8,7 +8,7 @@ export const sidebarNavItems = [
   {
     id: 2,
     title: 'Social',
-    link: '/social',
+    link: '/friends',
     iconSrc: '/images/sidebar/social.png',
   },
   {

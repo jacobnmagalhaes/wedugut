@@ -5,12 +5,13 @@ interface IProps {
   children: ReactNode
   isOpen: boolean
   setIsOpen: (b: boolean) => void
+  hideOnClickOverlay?: boolean
 }
 
-const Popup: FC<IProps> = ({ children, isOpen, setIsOpen }) => {
+const Popup: FC<IProps> = ({ children, isOpen, setIsOpen, hideOnClickOverlay = true }) => {
   const ref = useRef(null)
 
-  useOutsideClick(ref, () => setIsOpen(false))
+  useOutsideClick(ref, () => hideOnClickOverlay && setIsOpen(false))
 
   return (
     <>
