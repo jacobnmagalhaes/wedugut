@@ -14,7 +14,7 @@ export default function VideosHackPage() {
       <Popup isOpen={isVisible} setIsOpen={setIsVisible}>
         <>
           <>
-            <Image src='/images/kids-zone/KIDS PAGE POPUP.png' width={2157} height={2636} />
+            <Image src='/images/videos-hack/VIDEO PAGE POPUP.png' width={2211} height={2681} />
             <img
               src='/images/main/Gobutton-1.webp'
               className='w-44 cursor-pointer'
