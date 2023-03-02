@@ -4,7 +4,7 @@ import ActionCard from '../Components/ActionCard/ActionCard'
 import ActionSection from '../Components/ActionSection/ActionSection'
 import Video from '../Components/Video/Video'
 import { kidsActionJourneysFirst, kidsShorts, kidsLongVideos } from '../data/kids.data'
-import { shortsSocialsIconLinks } from '../data/socials.data'
+import { longSocialsIconLinks, shortsSocialsIconLinks } from '../data/socials.data'
 
 const KidsZone: FC = () => {
   return (
@@ -12,7 +12,7 @@ const KidsZone: FC = () => {
       <ActionSection className='mb-20'>
         <ActionCard
           image='/images/main/KIDS BANNER.png'
-          link='/'
+          link='/kids'
           width='1'
           imgHeight={240}
           imgWidth={800}
@@ -39,15 +39,17 @@ const KidsZone: FC = () => {
       </ActionSection>
 
       <ActionSection className='mb-20' title='Long videos' subtitle='See result of your Actions!'>
-        {kidsLongVideos.map(({ link, id, image }) => (
-          <ActionCard
-            key={id}
-            width='1/2'
-            image={image}
-            link={link}
-            imgWidth={400}
-            imgHeight={236}
-          />
+        {kidsLongVideos.map(({ link, id, shareLink, name }) => (
+          <div key={id} className='w-wrap-card-2'>
+            <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
+            <div className='mt-2 ml-2 flex gap-4 items-center'>
+              {longSocialsIconLinks.map(({ name, imgSrc, link }) => (
+                <a key={name} href={link} target={'blank'}>
+                  <Image src={imgSrc} width={24} height={24} />
+                </a>
+              ))}
+            </div>
+          </div>
         ))}
       </ActionSection>
 
@@ -56,13 +58,13 @@ const KidsZone: FC = () => {
         cardWrapperClasses='lg:gap-12 xl:!gap-14 !flex-wrap'
         title='Short videos'
         subtitle='See what our volunteers have to say!'>
-        {kidsShorts.map(({ link, id, name, shareLink }) => (
+        {kidsShorts.map(({ link, id, name, shareLink, shares }) => (
           <div key={id} className='w-wrap-card'>
             <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
             <div className='mt-2 ml-2 flex gap-4 items-center'>
-              {shortsSocialsIconLinks.map(({ name, imgSrc, link }) => (
-                <a key={name} href={link} target={'blank'}>
-                  <Image src={imgSrc} width={24} height={24} />
+              {shares.map(({ icon, link }) => (
+                <a key={link} href={link} target={'blank'}>
+                  <Image src={icon} width={24} height={24} />
                 </a>
               ))}
             </div>

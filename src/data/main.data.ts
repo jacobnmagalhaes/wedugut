@@ -107,24 +107,60 @@ export const actionJourneysSecond = [
 
 export const shortsVideos = [
   {
-    name: 'RECYCLING PLASTIC',
-    link: '6J2uadldpZw',
-    shareLink: 'https://youtube.com/shorts/6J2uadldpZw?feature=share',
+    name: 'Know what you can recycle!',
+    link: 'JtDZJdKMZ-8',
+    shareLink: 'https://youtube.com/shorts/JtDZJdKMZ-8?feature=share',
+    shares: [
+      {
+        link: 'https://www.tiktok.com/@wedugut/video/7011988064008457478',
+        icon: '/images/common/tiktok.svg',
+      },
+      {
+        link: 'https://www.instagram.com/p/CWDXiy6rhl2/',
+        icon: '/images/common/instagram.svg',
+      },
+    ],
   },
   {
-    name: 'WILDLIFE TRADE (PART 1)',
-    link: 'ElN1o-dFL6A',
-    shareLink: 'https://youtube.com/shorts/ElN1o-dFL6A?feature=share',
+    name: 'We can take the CO2 from the air, with technology also!',
+    link: 'aQ1pG8h3MOY',
+    shareLink: 'https://youtube.com/shorts/aQ1pG8h3MOY?feature=share',
+    shares: [
+      {
+        link: 'https://www.tiktok.com/@wedugut/video/7161742949968022789',
+        icon: '/images/common/tiktok.svg',
+      },
+      {
+        link: 'https://www.instagram.com/p/ChxouenBeql/',
+        icon: '/images/common/instagram.svg',
+      },
+    ],
   },
   {
     name: 'EVERY ACTION COUNTS!',
     link: 'W6Byoq5l9bs',
     shareLink: 'https://youtube.com/shorts/W6Byoq5l9bs?feature=share',
+    shares: [
+      {
+        link: 'https://www.tiktok.com/@wedugut/video/7135782415452081414',
+        icon: '/images/common/tiktok.svg',
+      },
+    ],
   },
   {
     name: 'Save the Amazon',
-    link: 'GOpZX4IZRF8',
-    shareLink: 'https://youtube.com/shorts/GOpZX4IZRF8?feature=share',
+    link: 'CyENkcZnt68',
+    shareLink: 'https://youtube.com/shorts/CyENkcZnt68?feature=share',
+    shares: [
+      {
+        link: 'https://www.tiktok.com/@wedugut/video/7120644854157249798',
+        icon: '/images/common/tiktok.svg',
+      },
+      {
+        link: 'https://www.facebook.com/watch/?v=595327198927812',
+        icon: '/images/common/facebook.svg',
+      },
+    ],
   },
 ]
 

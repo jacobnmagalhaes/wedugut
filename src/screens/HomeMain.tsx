@@ -88,13 +88,13 @@ const HomeMain: FC = () => {
         subtitle='See what our volunteers have to say!'
         className='mb-20'
         cardWrapperClasses='flex-wrap'>
-        {shortsVideos.map(({ link, name, shareLink }) => (
+        {shortsVideos.map(({ link, name, shareLink, shares }) => (
           <div key={link} className='w-wrap-card'>
             <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
             <div className='mt-2 ml-2 flex gap-4 items-center'>
-              {shortsSocialsIconLinks.map(({ name, imgSrc, link }) => (
-                <a key={name} href={link} target={'blank'}>
-                  <Image src={imgSrc} width={24} height={24} />
+              {shares.map(({ icon, link }) => (
+                <a key={link} href={link} target={'blank'}>
+                  <Image src={icon} width={24} height={24} />
                 </a>
               ))}
             </div>

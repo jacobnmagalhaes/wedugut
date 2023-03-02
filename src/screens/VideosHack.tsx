@@ -12,7 +12,7 @@ const VideosHack: FC = () => {
         title='Long videos'
         subtitle='See the result of your Actions!'
         className='mb-20 flex-wrap'
-        cardWrapperClasses='lg:gap-12 xl:!gap-14 flex-wrap'>
+        cardWrapperClasses='lg:gap-12 xl:!gap-14 !flex-wrap'>
         {videosHackLongsVideos.map(({ _id, link, text, name, shareLink }) => (
           <div key={_id} className='w-wrap-card-2'>
             <Video width='1' text={text} link={link} name={name} shareLink={shareLink} />
@@ -28,16 +28,16 @@ const VideosHack: FC = () => {
       </ActionSection>
       <ActionSection
         className='flex-wrap'
-        cardWrapperClasses='lg:gap-12 xl:!gap-14 flex-wrap'
+        cardWrapperClasses='lg:gap-12 xl:!gap-14 !flex-wrap'
         title='Short videos'
         subtitle='See what our volunteers have to say!'>
-        {videosHackShorts.map(({ link, id, name, shareLink }) => (
+        {videosHackShorts.map(({ link, id, name, shareLink, shares }) => (
           <div key={id} className='w-wrap-card'>
             <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
             <div className='mt-2 ml-2 flex gap-4 items-center'>
-              {shortsSocialsIconLinks.map(({ name, imgSrc, link }) => (
-                <a key={name} href={link} target={'blank'}>
-                  <Image src={imgSrc} width={24} height={24} />
+              {shares.map(({ icon, link }) => (
+                <a key={link} href={link} target={'blank'}>
+                  <Image src={icon} width={24} height={24} />
                 </a>
               ))}
             </div>
