@@ -53,7 +53,7 @@ const KidsZone: FC = () => {
 
       <ActionSection
         className='flex-wrap'
-        cardWrapperClasses='lg:gap-12 xl:!gap-14 flex-wrap'
+        cardWrapperClasses='lg:gap-12 xl:!gap-14 !flex-wrap'
         title='Short videos'
         subtitle='See what our volunteers have to say!'>
         {kidsShorts.map(({ link, id, name, shareLink }) => (
