@@ -1,28 +1,35 @@
-import React from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
+import { FooterComponent } from '../Components/footer'
+import SideBarMenu from '../Components/sidebar/SideBarMenu'
+import { HeaderComponent } from '../Components/header'
+import Popup from '../Components/Popup/Popup'
+import Image from 'next/image'
+import Journeys from '../screens/Journeys'
 
 export default function Journey() {
-    return (
-        <div className='bg-gradient-to-t from-white to-[#3399cc] h-screen flex flex-col overflow-y-hidden'>
+  const [isVisible, setIsVisible] = useState(true)
 
-
-
-            <img src="images/prejourney/takejourney.webp" className=' w-8/12 lg:w-6/12 lg:h-screen m-auto ' alt="" />
-
-            <div className='h-[12vh] lg:h-[14vh] flex flex-col justify-center absolute bottom-5 md:bottom-6 w-full'>
-
-                <Link href='/journey-' >
-                    <img src="images/startup/GOButton.webp" className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
-                </Link>
-              
-                {/* <Link href='/journey-' >
-                    <img src="images/prejourney/SHAREBUTTON.webp" className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
-                </Link>
-               */}
-
-
-            </div>
-
-        </div>
-    )
+  return (
+    <>
+      <Popup isOpen={isVisible} setIsOpen={setIsVisible}>
+        <>
+          <>
+            <Image src='/images/journey/JOURNEY PAGE POPUP.png' width={2175} height={2803} />
+            <img
+              src='/images/main/Gobutton-1.webp'
+              className='w-44 cursor-pointer'
+              onClick={() => setIsVisible(false)}
+            />
+          </>
+        </>
+      </Popup>
+      <HeaderComponent image={'/images/homePage/Logo.webp'} />
+      <div className='min-h-[100vh] flex'>
+        <SideBarMenu />
+        <Journeys />
+      </div>
+      <FooterComponent />
+    </>
+  )
 }
