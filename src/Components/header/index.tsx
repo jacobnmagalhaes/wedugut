@@ -18,10 +18,10 @@ export function HeaderComponent({ image }: PropsHeader) {
           <SideBarMenu open={open} />
         </div>
       )}
-      <header className='w-full px-4 md:px-11 h-[50px] bg-black flex items-center'>
+      <header className='w-full px-2 sm:px-4 md:px-11 h-[50px] bg-black flex items-center'>
         <div
           onClick={() => setOpen((prev) => !prev)}
-          className='h-[40px] w-[40px] relative cursor-pointer mr-4 md:hidden'>
+          className='h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] relative cursor-pointer mr-4 md:hidden'>
           <Image
             src={'/images/Kids/Menu.png'}
             alt='Menu'
@@ -32,7 +32,7 @@ export function HeaderComponent({ image }: PropsHeader) {
         </div>
         <div className='w-full flex justify-between items-center'>
           <div className='flex items-center'>
-            <div className='h-[40px] w-[160px] relative'>
+            <div className='h-[30px] w-[120px] sm:h-[40px] sm:w-[160px] relative'>
               <Link href={'/main'}>
                 <Image
                   src={image}
@@ -53,7 +53,7 @@ export function HeaderComponent({ image }: PropsHeader) {
             </a>
 
             <label className='px-2 py-1 bg-white flex items-center'>
-              <input className='focus:border-0 outline-none bg-white' />
+              <input className='w-32 sm:w-auto focus:border-0 outline-none bg-white' />
               <Image
                 src='/images/common/search-icon.png'
                 width={20}

@@ -7,7 +7,7 @@ import { videosHackLongsVideos, videosHackShorts } from '../data/videoshack.data
 
 const VideosHack: FC = () => {
   return (
-    <div className='w-full pt-16 pr-16'>
+    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-16'>
       <ActionSection
         title='Long videos'
         subtitle='See the result of your Actions!'

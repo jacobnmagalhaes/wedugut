@@ -20,14 +20,17 @@ const ActionSection: FC<IProps> = ({
     <div className={className}>
       {title && (
         <div className='flex mb-4'>
-          <h2 className='uppercase text-xl font-bold w-'>{title}</h2>
-          <p className='ml-8 italic text-xl'>{subtitle}</p>
+          <h2 className='uppercase text-base md:text-xl font-bold w-'>{title}</h2>
+          <p className='ml-8 italic text-base md:text-xl'>{subtitle}</p>
         </div>
       )}
       <div
-        className={cn(['flex gap-4'], {
-          [`${cardWrapperClasses}`]: cardWrapperClasses,
-        })}>
+        className={cn(
+          ['flex gap-2 justify-between md:justify-start md:gap-4 flex-wrap md:flex-nowrap'],
+          {
+            [`${cardWrapperClasses}`]: cardWrapperClasses,
+          },
+        )}>
         {children}
       </div>
     </div>

@@ -8,7 +8,7 @@ import { shortsSocialsIconLinks } from '../data/socials.data'
 
 const KidsZone: FC = () => {
   return (
-    <div className='w-full pt-16 pr-16'>
+    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-16'>
       <ActionSection className='mb-20'>
         <ActionCard
           image='/images/main/KIDS BANNER.png'

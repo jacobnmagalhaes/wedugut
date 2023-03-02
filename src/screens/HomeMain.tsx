@@ -18,7 +18,7 @@ import { longSocialsIconLinks, shortsSocialsIconLinks } from '../data/socials.da
 
 const HomeMain: FC = () => {
   return (
-    <div className='w-full pt-16 pr-16'>
+    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-16'>
       <ActionSection
         className='mb-20'
         title='Featured action journeys'
@@ -86,7 +86,8 @@ const HomeMain: FC = () => {
       <ActionSection
         title='Shorts videos'
         subtitle='See what our volunteers have to say!'
-        className='mb-20'>
+        className='mb-20'
+        cardWrapperClasses='flex-wrap'>
         {shortsVideos.map(({ link, name, shareLink }) => (
           <div key={link} className='w-wrap-card'>
             <Video width='1' text={name} link={link} name={name} shareLink={shareLink} />
@@ -124,7 +125,7 @@ const HomeMain: FC = () => {
         subtitle='See the result of your Actions!'
         className='mb-20'>
         {youtubeVideos.map(({ _id, link, text, name, shareLink }) => (
-          <div key={_id} className='w-1/2'>
+          <div key={_id} className='w-wrap-card-2'>
             <Video width='1' text={text} link={link} name={name} shareLink={shareLink} />
             <div className='mt-2 ml-2 flex gap-4 items-center'>
               {longSocialsIconLinks.map(({ name, imgSrc, link }) => (

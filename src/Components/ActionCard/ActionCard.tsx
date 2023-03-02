@@ -26,16 +26,19 @@ const ActionCard: FC<IProps> = ({
 }) => {
   return (
     <div
-      className={cn({
-        'w-full': width === '1',
-        'w-1/2': width === '1/2',
-        'w-1/4': width === '1/4',
-        'w-wrap-card': width === '1/4-wrap',
-      })}>
+      className={cn(
+        {
+          'w-full': width === '1',
+          'w-full md:w-1/2': width === '1/2',
+          'w-full sm:w-[49%] md:w-1/4': width === '1/4',
+          'w-wrap-card': width === '1/4-wrap',
+        },
+        'mb-6 sm:mb-0',
+      )}>
       {isShareRow && (
         <div className={`flex ${points ? 'justify-between' : 'justify-end'} items-center `}>
           {points && (
-            <h2 className='text-base text-green-400'>
+            <h2 className='text-xl text-green-400'>
               <span className='font-bold'>{points}</span>pts
             </h2>
           )}
