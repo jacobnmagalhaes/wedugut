@@ -54,19 +54,19 @@ export function HeaderComponent({ image }: PropsHeader) {
                 />
               </Link>
             </div>
-            <p className='uppercase text-white ml-6 lg:ml-12 text-xs lg:text-base hidden md:block'>
+            <p className='uppercase text-white ml-6 lg:ml-8 xl:ml-12 text-xs lg:text-base hidden lg:block'>
               Change our future, 1 small action at time!
             </p>
           </div>
           <div className='flex items-center'>
             <a
               onClick={() => setIsOpenPopup(true)}
-              className='text-blue-700 border-2 py-[2px] hidden md:block md:px-1 lg:px-3 mr-3 lg:mr-7 md:text-xs lg:text-sm border-green-600 cursor-pointer duration-100 hover:border-green-400 hover:text-blue-500'>
-              Take action now
+              className='text-white py-[4px] px-2 lg:px-4 mr-0 md:mr-3 lg:mr-7 text-sm md:text-sm bg-green-500 cursor-pointer duration-100 hover:bg-green-400'>
+              Take action now!
             </a>
 
             {visiblePaths.includes(pathname) && (
-              <label className='px-2 py-1 bg-white flex items-center'>
+              <label className='px-2 py-1 bg-white hidden md:flex items-center'>
                 <input
                   onChange={(e) => dispatch(setSearchTerm(e.target.value.toLowerCase()))}
                   className='w-32 sm:w-auto focus:border-0 outline-none bg-white'
