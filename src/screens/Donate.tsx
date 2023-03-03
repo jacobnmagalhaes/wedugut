@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FC } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 
@@ -7,6 +7,11 @@ import ActionSection from '../Components/ActionSection/ActionSection'
 import { activeDonationData, featuredDonationData } from '../data/donation.data'
 
 const Donate: FC = () => {
+  const [isMounted, setIsMounted] = useState(false) // Need this for the react-tooltip
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
   return (
     <>
       <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
@@ -46,13 +51,15 @@ const Donate: FC = () => {
           ))}
         </ActionSection>
       </div>
-      <Tooltip
-        id='coming-soon-tooltip'
-        place='top'
-        noArrow
-        className='!bg-white border border-gray-200 shadow-md !opacity-100'>
-        <p className='text-xl text-black'>Coming soon!</p>
-      </Tooltip>
+      {isMounted && (
+        <Tooltip
+          id='coming-soon-tooltip'
+          place='top'
+          noArrow
+          className='!bg-white border border-gray-200 shadow-md !opacity-100'>
+          <p className='text-xl text-black'>Coming soon!</p>
+        </Tooltip>
+      )}
     </>
   )
 }
