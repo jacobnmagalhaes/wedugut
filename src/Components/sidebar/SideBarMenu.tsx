@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { FC } from 'react'
 import { sidebarAdditionalLinks, sidebarNavItems, sidebarSocialIcons } from './SideBarMenu.data'
 
@@ -9,6 +10,8 @@ interface IProps {
 }
 
 const SideBarMenu: FC<IProps> = ({ open, setIsOpenPopup }) => {
+  const { route } = useRouter()
+
   return (
     <div
       className={cn(
@@ -37,7 +40,12 @@ const SideBarMenu: FC<IProps> = ({ open, setIsOpenPopup }) => {
                       })}
                     />
                   </div>
-                  <span className='ml-3 text-gray-600'>{title}</span>
+                  <span
+                    className={cn('ml-3 text-gray-600 relative', {
+                      'menu-active': route === link,
+                    })}>
+                    {title}
+                  </span>
                 </li>
               </Link>
             ))}
