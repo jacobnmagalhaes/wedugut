@@ -6,6 +6,12 @@ export const sidebarNavItems = [
     iconSrc: '/images/sidebar/home.png',
   },
   {
+    id: 21,
+    title: 'Journeys',
+    link: '/journeys',
+    iconSrc: '/images/sidebar/journeys.png',
+  },
+  {
     id: 2,
     title: 'Social',
     link: '/friends',
