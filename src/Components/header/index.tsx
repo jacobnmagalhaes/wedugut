@@ -44,7 +44,7 @@ export function HeaderComponent({ image }: PropsHeader) {
         <div className='w-full flex justify-between items-center'>
           <div className='flex items-center'>
             <div className='h-[30px] w-[120px] sm:h-[40px] sm:w-[160px] relative'>
-              <Link href={'/'}>
+              <Link href='/'>
                 <Image
                   src={image}
                   alt='Logo Weguut'

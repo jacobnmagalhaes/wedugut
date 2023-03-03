@@ -7,11 +7,15 @@ import HomeMain from '../screens/Main/HomeMain'
 import HomeMainPopup from '../screens/Main/HomeMainPopup'
 
 export default function HomePage() {
-  const { query } = useRouter()
+  const { query, route, asPath } = useRouter()
   const [isOpen, setIsOpen] = useState(false)
+  const [prevRoute, setPrevRoute] = useState('')
 
   useEffect(() => {
-    if (query.source == 'dugutapp') {
+    if (query.source === 'dugutapp') {
+      setIsOpen(false)
+    } else if (prevRoute !== route && asPath !== '/?source=dugutapp') {
+      setPrevRoute(route)
       setIsOpen(true)
     }
   }, [query])
