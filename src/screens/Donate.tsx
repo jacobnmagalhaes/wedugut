@@ -29,7 +29,7 @@ const Donate: FC = () => {
 
       <ActionSection title='Featured causes' subtitle='Coming Soon!'>
         {activeDonationData.map(({ src }, id) => (
-          <div key={id} className='w-full sm:w-[49%] md:w-1/4 relative'>
+          <div key={id} className='w-wrap-card-action relative'>
             <Image
               src={src}
               width={1059}

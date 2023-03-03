@@ -72,7 +72,7 @@ const KidsZone: FC = () => {
           </ActionSection>
 
           <ActionSection
-            className='flex-wrap'
+            className='flex-wrap mb-20'
             cardWrapperClasses='lg:gap-12 xl:!gap-14 !flex-wrap'
             title='Short videos'
             subtitle='See what our volunteers have to say!'>
@@ -88,6 +88,17 @@ const KidsZone: FC = () => {
                 </div>
               </div>
             ))}
+          </ActionSection>
+
+          <ActionSection title='Just play mini games' subtitle='have fun and learn!'>
+            <ActionCard
+              image='/images/main/GAMES.png'
+              link='/play'
+              width='1'
+              imgHeight={370}
+              imgWidth={1000}
+              isShareRow={false}
+            />
           </ActionSection>
         </>
       ) : (

@@ -30,7 +30,7 @@ const ActionCard: FC<IProps> = ({
         {
           'w-full': width === '1',
           'w-full md:w-1/2': width === '1/2',
-          'w-full sm:w-[49%] md:w-1/4': width === '1/4',
+          'w-[48%] sm:w-[49%] md:w-1/4': width === '1/4',
           'w-wrap-card': width === '1/4-wrap',
         },
         'mb-6 sm:mb-0',
