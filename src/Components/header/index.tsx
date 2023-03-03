@@ -25,7 +25,7 @@ export function HeaderComponent({ image }: PropsHeader) {
   return (
     <div className='sticky top-0 z-50 md:z-auto md:relative md:top-auto'>
       {open && (
-        <div className='absolute top-full left-0 z-40 h-[100vh]'>
+        <div className='absolute top-full left-0 z-40 h-[100vh] md:hidden'>
           <SideBarMenu open={open} setIsOpenPopup={setIsOpenPopup} />
         </div>
       )}
