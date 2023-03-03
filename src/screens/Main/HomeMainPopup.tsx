@@ -13,19 +13,14 @@ const HomeMainPopup: FC<IProps> = ({ setIsOpen, isVisible }) => {
     <Popup isOpen={isVisible} setIsOpen={setIsOpen}>
       <>
         <img className='w-[280px] sm:w-auto mt-8' src='/images/main/MAIN PAGE POPUP.png' />
-        <p className='font-bold sm:mb-4 text-xs px-2 sm:px-0 md:text-base'>
-          Help our volunteers to create a better future for all of us! All our content is created by
-          people like you that want to become part of the solution!
-        </p>
         <p className='text-xs px-2 sm:px-0 md:text-base'>
-          Go on a journey and learn about our most pressing issues and share your knowledge with
-          your friends and family. <b>By engaging in a journey, you can take real-life actions</b>{' '}
-          that are performed by our fast-growing army of volunteers. You need 500 points to redeem
-          your Action Reward! Journeys with a star are the most active journeys.
           <b>
-            Watch videos of our actions, we have already taken over 20.000 of them and we just
-            started!
-          </b>
+            Help our volunteers to create a better future for all of us! All our content is created
+            by people like you that want to become part of the solution!
+          </b>{' '}
+          By engaging in a journey, you learn about issues and take real-life actions that are
+          performed by our volunteers. You need 500 points to redeem your Action Reward!{' '}
+          <b>TAKE ACTION NOW!</b>
         </p>
 
         <h3 className='uppercase text-center text-xs md:text-sm mt-4 mb-2 sm:mt-9 sm:mb-6'>
