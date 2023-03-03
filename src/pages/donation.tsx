@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Script from 'next/script'
 import { useState } from 'react'
@@ -6,7 +5,7 @@ import { FooterComponent } from '../Components/footer'
 import { HeaderComponent } from '../Components/header'
 import Popup from '../Components/Popup/Popup'
 import SideBarMenu from '../Components/sidebar/SideBarMenu'
-const Donate = dynamic(() => import('../screens/Donate'), { ssr: false })
+import Donate from '../screens/Donate'
 
 export default function Donation() {
   const [isVisible, setIsVisible] = useState(true)
