@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Popup from '../Components/Popup/Popup'
-import { HeaderComponent } from '../Components/header'
-import SideBarMenu from '../Components/sidebar/SideBarMenu'
-import { FooterComponent } from '../Components/footer'
+import { HeaderComponent } from '../Components/Header'
+import SideBarMenu from '../Components/Sidebar/SideBarMenu'
+import { FooterComponent } from '../Components/Footer'
 import VideosHack from '../screens/VideosHack'
 
 export default function VideosHackPage() {

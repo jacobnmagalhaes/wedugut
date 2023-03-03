@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import React, { ReactNode } from 'react'
-import { FooterComponent } from '../footer'
-import { HeaderComponent } from '../header'
-import SideBarMenu from '../sidebar/SideBarMenu'
+import { FooterComponent } from '../Footer'
+import { HeaderComponent } from '../Header'
+import SideBarMenu from '../Sidebar/SideBarMenu'
 
 interface LayoutProps {
   children: ReactNode

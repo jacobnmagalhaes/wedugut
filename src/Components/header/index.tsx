@@ -7,7 +7,7 @@ import { setSearchTerm } from '../../redux/searchSlice'
 import HomeMainPopup from '../../screens/Main/HomeMainPopup'
 
 // component
-import SideBarMenu from '../sidebar/SideBarMenu'
+import SideBarMenu from '../Sidebar/SideBarMenu'
 
 interface PropsHeader {
   image: string

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { FooterComponent } from '../Components/footer'
-import { HeaderComponent } from '../Components/header'
-import SideBarMenu from '../Components/sidebar/SideBarMenu'
+import { FooterComponent } from '../Components/Footer'
+import { HeaderComponent } from '../Components/Header'
+import SideBarMenu from '../Components/Sidebar/SideBarMenu'
 import HomeMain from '../screens/Main/HomeMain'
 import HomeMainPopup from '../screens/Main/HomeMainPopup'
 

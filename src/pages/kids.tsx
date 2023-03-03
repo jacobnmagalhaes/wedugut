@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Script from 'next/script'
 import { useState } from 'react'
-import { FooterComponent } from '../Components/footer'
-import { HeaderComponent } from '../Components/header'
+import { FooterComponent } from '../Components/Footer'
+import { HeaderComponent } from '../Components/Header'
 import Popup from '../Components/Popup/Popup'
-import SideBarMenu from '../Components/sidebar/SideBarMenu'
+import SideBarMenu from '../Components/Sidebar/SideBarMenu'
 import KidsZone from '../screens/KidsZone'
 
 export default function Kids() {
