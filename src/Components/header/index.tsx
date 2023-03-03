@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import HomeMainPopup from '../../screens/Main/HomeMainPopup'
 
 // component
 import SideBarMenu from '../sidebar/SideBarMenu'
@@ -10,6 +11,8 @@ interface PropsHeader {
 }
 
 export function HeaderComponent({ image }: PropsHeader) {
+  const [isPopupOpen, setIsOpenPopup] = useState(false)
+
   const [open, setOpen] = useState(false)
   return (
     <div className='sticky top-0 z-50 md:z-auto md:relative md:top-auto'>
@@ -32,7 +35,7 @@ export function HeaderComponent({ image }: PropsHeader) {
         </div>
         <div className='w-full flex justify-between items-center'>
           <div className='flex items-center'>
-            <div className='h-[30px] w-[120px] sm:h-[40px] sm:w-[160px] relative'>
+            <div className='h-[20px] w-[80px] sm:h-[40px] sm:w-[160px] relative'>
               <Link href={'/main'}>
                 <Image
                   src={image}
@@ -43,17 +46,19 @@ export function HeaderComponent({ image }: PropsHeader) {
                 />
               </Link>
             </div>
-            <p className='uppercase text-white ml-12 hidden md:block'>
+            <p className='uppercase text-white ml-6 lg:ml-12 text-xs lg:text-base hidden md:block'>
               Change our future, 1 small action at time!
             </p>
           </div>
           <div className='flex items-center'>
-            <a className='text-blue-700 border-2 py-[2px] px-3 mr-7 hidden md:block text-sm border-green-600 cursor-pointer duration-100 hover:border-green-400 hover:text-blue-500'>
-              Join our Movement
+            <a
+              onClick={() => setIsOpenPopup(true)}
+              className='text-blue-700 border-2 py-[2px] px-1 sm:px-3 mr-2 sm:mr-7 text-xs sm:text-sm border-green-600 cursor-pointer duration-100 hover:border-green-400 hover:text-blue-500'>
+              Take action now
             </a>
 
             <label className='px-2 py-1 bg-white flex items-center'>
-              <input className='w-32 sm:w-auto focus:border-0 outline-none bg-white' />
+              <input className='w-20 sm:w-auto focus:border-0 outline-none bg-white' />
               <Image
                 src='/images/common/search-icon.png'
                 width={20}
@@ -64,6 +69,8 @@ export function HeaderComponent({ image }: PropsHeader) {
           </div>
         </div>
       </header>
+
+      <HomeMainPopup isVisible={isPopupOpen} setIsOpen={setIsOpenPopup} />
     </div>
   )
 }

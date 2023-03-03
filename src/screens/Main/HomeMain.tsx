@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { FC } from 'react'
-import ActionCard from '../Components/ActionCard/ActionCard'
-import ActionSection from '../Components/ActionSection/ActionSection'
-import Video from '../Components/Video/Video'
+import ActionCard from '../../Components/ActionCard/ActionCard'
+import ActionSection from '../../Components/ActionSection/ActionSection'
+import Video from '../../Components/Video/Video'
 import {
   actionJourneyFirst,
   actionJourneysFifth,
@@ -13,8 +13,8 @@ import {
   kidsForKids,
   shortsVideos,
   youtubeVideos,
-} from '../data/main.data'
-import { longSocialsIconLinks, shortsSocialsIconLinks } from '../data/socials.data'
+} from '../../data/main.data'
+import { longSocialsIconLinks, shortsSocialsIconLinks } from '../../data/socials.data'
 
 const HomeMain: FC = () => {
   return (
