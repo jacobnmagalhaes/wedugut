@@ -5,12 +5,12 @@ import { allActionJourneys, allFeaturedActionJourneys } from '../data/journeys.d
 
 const Journeys: FC = () => {
   return (
-    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
+    <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       <ActionSection
         title='Action journeys'
         subtitle='Learn about issues and take action!'
         className='flex-wrap mb-20'
-        cardWrapperClasses='lg:gap-12 xl:!gap-14 flex-wrap'>
+        cardWrapperClasses='!flex-wrap'>
         {allActionJourneys.map(({ id, name, link, points, image, text }) => (
           <div key={id} className='w-wrap-card'>
             <ActionCard
