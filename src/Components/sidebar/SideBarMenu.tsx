@@ -5,19 +5,25 @@ import { sidebarAdditionalLinks, sidebarNavItems, sidebarSocialIcons } from './S
 
 interface IProps {
   open?: boolean
+  setIsOpenPopup?: (b: boolean) => void
 }
 
-const SideBarMenu: FC<IProps> = ({ open }) => {
+const SideBarMenu: FC<IProps> = ({ open, setIsOpenPopup }) => {
   return (
     <div
       className={cn(
-        'bg-white pt-0 md:pt-16 pb-24 pl-10 pr-6 w-52 min-w-[200px] h-full hidden md:block relative',
+        'bg-white pt-0 md:pt-16 pb-24 pl-10 pr-6 w-52 min-w-[200px] h-full hidden md:block shadow-2xl sticky top-0 left-0',
         {
           ['!block']: open,
         },
       )}>
-      <div className='sticky top-0 left-0 pt-8'>
-        <nav>
+      <div className='sticky top-0 left-0 pt-6 md:pt-0'>
+        <a
+          onClick={() => setIsOpenPopup && setIsOpenPopup(true)}
+          className='text-blue-700 border-2 py-1 md:hidden px-1 text-base border-green-600 cursor-pointer duration-100 hover:border-green-400 hover:text-blue-500'>
+          Take action now
+        </a>
+        <nav className='mt-4 md:mt-0'>
           <ul className='pb-4 md:pb-8 border-b-2 border-gray-400'>
             {sidebarNavItems.map(({ id, title, link, iconSrc }) => (
               <Link key={id + title} href={link}>

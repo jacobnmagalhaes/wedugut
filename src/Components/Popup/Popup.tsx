@@ -16,7 +16,7 @@ const Popup: FC<IProps> = ({ children, isOpen, setIsOpen, hideOnClickOverlay = t
   return (
     <>
       {isOpen && (
-        <div className='fixed top-0 left-0 w-full h-full z-20'>
+        <div className='fixed top-0 left-0 w-full h-full z-[1000]'>
           <div className='bg-black opacity-70 w-full h-full'></div>
           <div
             ref={ref}

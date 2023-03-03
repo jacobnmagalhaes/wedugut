@@ -18,7 +18,7 @@ export function HeaderComponent({ image }: PropsHeader) {
     <div className='sticky top-0 z-50 md:z-auto md:relative md:top-auto'>
       {open && (
         <div className='absolute top-full left-0 z-40 h-[100vh]'>
-          <SideBarMenu open={open} />
+          <SideBarMenu open={open} setIsOpenPopup={setIsOpenPopup} />
         </div>
       )}
       <header className='w-full px-2 sm:px-4 md:px-11 h-[50px] bg-black flex items-center'>
@@ -35,7 +35,7 @@ export function HeaderComponent({ image }: PropsHeader) {
         </div>
         <div className='w-full flex justify-between items-center'>
           <div className='flex items-center'>
-            <div className='h-[20px] w-[80px] sm:h-[40px] sm:w-[160px] relative'>
+            <div className='h-[30px] w-[120px] sm:h-[40px] sm:w-[160px] relative'>
               <Link href={'/main'}>
                 <Image
                   src={image}
@@ -53,12 +53,12 @@ export function HeaderComponent({ image }: PropsHeader) {
           <div className='flex items-center'>
             <a
               onClick={() => setIsOpenPopup(true)}
-              className='text-blue-700 border-2 py-[2px] px-1 sm:px-3 mr-2 sm:mr-7 text-xs sm:text-sm border-green-600 cursor-pointer duration-100 hover:border-green-400 hover:text-blue-500'>
+              className='text-blue-700 border-2 py-[2px] hidden md:block md:px-1 lg:px-3 mr-3 lg:mr-7 md:text-xs lg:text-sm border-green-600 cursor-pointer duration-100 hover:border-green-400 hover:text-blue-500'>
               Take action now
             </a>
 
             <label className='px-2 py-1 bg-white flex items-center'>
-              <input className='w-20 sm:w-auto focus:border-0 outline-none bg-white' />
+              <input className='w-32 sm:w-36 md:w-auto focus:border-0 outline-none bg-white' />
               <Image
                 src='/images/common/search-icon.png'
                 width={20}
