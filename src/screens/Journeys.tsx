@@ -5,7 +5,7 @@ import { allActionJourneys, allFeaturedActionJourneys } from '../data/journeys.d
 
 const Journeys: FC = () => {
   return (
-    <div className='w-full pt-16 pr-16'>
+    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       <ActionSection
         title='Action journeys'
         subtitle='Learn about issues and take action!'

@@ -3,7 +3,7 @@ import { sdgData } from '../data/sdg.data'
 
 const Sdg: FC = () => {
   return (
-    <div className='w-full pt-16 px-16'>
+    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       {sdgData.map(({ head, image, body }) => (
         <div
           key={head}

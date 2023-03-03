@@ -29,7 +29,7 @@ export function HeaderComponent({ image }: PropsHeader) {
           <SideBarMenu open={open} setIsOpenPopup={setIsOpenPopup} />
         </div>
       )}
-      <header className='w-full px-2 sm:px-4 md:px-11 h-[50px] bg-black flex items-center'>
+      <header className='w-full px-6 md:px-11 h-[50px] bg-black flex items-center'>
         <div
           onClick={() => setOpen((prev) => !prev)}
           className='h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] relative cursor-pointer mr-4 md:hidden'>

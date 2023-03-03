@@ -31,7 +31,7 @@ const HomeMain: FC = () => {
   )
 
   return (
-    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-16'>
+    <div className='w-full pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       {!searchTerm ? (
         <>
           <ActionSection
@@ -176,7 +176,7 @@ const HomeMain: FC = () => {
             subtitle='Every purchase takes an action!'
             className='mb-20'>
             <ActionCard
-              image='/images/main/SHOP.png'
+              image='/images/main/shop-image.png'
               link='https://friends.dugut.app/shop'
               width='1'
               imgHeight={240}
@@ -205,11 +205,11 @@ const HomeMain: FC = () => {
 
           <ActionSection title='Just play mini games' subtitle='have fun and learn!'>
             <ActionCard
-              image='/images/main/Games.png'
+              image='/images/main/GAMES.png'
               link='/play'
               width='1'
-              imgHeight={295}
-              imgWidth={800}
+              imgHeight={370}
+              imgWidth={1000}
               isShareRow={false}
             />
           </ActionSection>
