@@ -7,11 +7,12 @@ import ActionSection from '../Components/ActionSection/ActionSection'
 import { activeDonationData, featuredDonationData } from '../data/donation.data'
 
 const Donate: FC = () => {
-  const [isMounted, setIsMounted] = useState(false) // Need this for the react-tooltip
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
     setIsMounted(true)
   }, [])
+
   return (
     <>
       <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
