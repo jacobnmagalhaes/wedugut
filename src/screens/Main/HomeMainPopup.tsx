@@ -34,7 +34,7 @@ const HomeMainPopup: FC<IProps> = ({ setIsOpen, isVisible }) => {
                 Go on an action journey to learn about sustainable issues and solutions and take a
                 real-live action! (+15 Minutes)
               </p>
-              <Link href='/journey'>
+              <Link href='/journeys'>
                 <img src='/images/main/Gobutton-1.webp' className='w-32 cursor-pointer' />
               </Link>
             </div>

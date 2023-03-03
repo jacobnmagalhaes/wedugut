@@ -61,7 +61,7 @@ const Donate: FC = () => {
                 className='cursor-pointer hover:brightness-110 '
               />
               {clickedSrc === src && (
-                <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 py-2 bg-red-400 font-semibold text-xl text-white'>
+                <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-2 bg-red-400 font-semibold text-xl text-white'>
                   Coming soon!
                 </p>
               )}
