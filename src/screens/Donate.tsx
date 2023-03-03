@@ -1,17 +1,21 @@
 import Image from 'next/image'
-import { FC, useState, useEffect } from 'react'
-import { Tooltip } from 'react-tooltip'
-import 'react-tooltip/dist/react-tooltip.css'
+import { FC, useEffect, useState } from 'react'
 
 import ActionSection from '../Components/ActionSection/ActionSection'
 import { activeDonationData, featuredDonationData } from '../data/donation.data'
 
 const Donate: FC = () => {
-  const [isMounted, setIsMounted] = useState(false)
+  const [clickedSrc, setClickedSrc] = useState('')
 
   useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    const timer = setTimeout(() => {
+      setClickedSrc('')
+    }, 750)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [clickedSrc])
 
   return (
     <>
@@ -24,7 +28,7 @@ const Donate: FC = () => {
         />
         <ActionSection title='Featured causes' subtitle='Coming Soon!' className='my-20'>
           {featuredDonationData.map(({ src }, id) => (
-            <div key={id} className='w-full md:w-1/2 relative'>
+            <div key={id} className='w-full md:w-1/2 relative' onClick={() => setClickedSrc(src)}>
               <Image
                 data-tooltip-id='coming-soon-tooltip'
                 src={src}
@@ -33,13 +37,21 @@ const Donate: FC = () => {
                 layout='responsive'
                 className='cursor-pointer hover:brightness-110 '
               />
+              {clickedSrc === src && (
+                <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-6 py-2 bg-red-400 font-semibold text-xl text-white'>
+                  Coming soon!
+                </p>
+              )}
             </div>
           ))}
         </ActionSection>
 
         <ActionSection title='Featured causes' subtitle='Coming Soon!'>
           {activeDonationData.map(({ src }, id) => (
-            <div key={id} className='w-wrap-card-action relative'>
+            <div
+              key={id}
+              className='w-wrap-card-action relative'
+              onClick={() => setClickedSrc(src)}>
               <Image
                 data-tooltip-id='coming-soon-tooltip'
                 src={src}
@@ -48,19 +60,15 @@ const Donate: FC = () => {
                 layout='responsive'
                 className='cursor-pointer hover:brightness-110 '
               />
+              {clickedSrc === src && (
+                <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-5 py-2 bg-red-400 font-semibold text-xl text-white'>
+                  Coming soon!
+                </p>
+              )}
             </div>
           ))}
         </ActionSection>
       </div>
-      {isMounted && (
-        <Tooltip
-          id='coming-soon-tooltip'
-          place='top'
-          noArrow
-          className='!bg-white border border-gray-200 shadow-md !opacity-100'>
-          <p className='text-xl text-black'>Coming soon!</p>
-        </Tooltip>
-      )}
     </>
   )
 }
