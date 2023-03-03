@@ -13,7 +13,7 @@ interface PropsHeader {
   image: string
 }
 
-const visiblePaths = ['/kids', '/', '/videoshack']
+const visiblePaths = ['/kids', '/', '/videoshack', '/journeys']
 
 export function HeaderComponent({ image }: PropsHeader) {
   const [isPopupOpen, setIsOpenPopup] = useState(false)
