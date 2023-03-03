@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setSearchTerm } from '../../redux/searchSlice'
 
 // component
 import SideBarMenu from '../sidebar/SideBarMenu'
@@ -9,8 +12,13 @@ interface PropsHeader {
   image: string
 }
 
+const visiblePaths = ['/kids', '/main', '/videoshack']
+
 export function HeaderComponent({ image }: PropsHeader) {
   const [open, setOpen] = useState(false)
+  const { pathname } = useRouter()
+  const dispatch = useDispatch()
+
   return (
     <div className='sticky top-0 z-50 md:z-auto md:relative md:top-auto'>
       {open && (
@@ -52,15 +60,20 @@ export function HeaderComponent({ image }: PropsHeader) {
               Join our Movement
             </a>
 
-            <label className='px-2 py-1 bg-white flex items-center'>
-              <input className='w-32 sm:w-auto focus:border-0 outline-none bg-white' />
-              <Image
-                src='/images/common/search-icon.png'
-                width={20}
-                height={20}
-                alt='Search Icon'
-              />
-            </label>
+            {visiblePaths.includes(pathname) && (
+              <label className='px-2 py-1 bg-white flex items-center'>
+                <input
+                  onChange={(e) => dispatch(setSearchTerm(e.target.value.toLowerCase()))}
+                  className='w-32 sm:w-auto focus:border-0 outline-none bg-white'
+                />
+                <Image
+                  src='/images/common/search-icon.png'
+                  width={20}
+                  height={20}
+                  alt='Search Icon'
+                />
+              </label>
+            )}
           </div>
         </div>
       </header>
