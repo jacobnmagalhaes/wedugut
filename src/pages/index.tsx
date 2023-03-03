@@ -1,32 +1,22 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import { useState } from 'react'
+import { FooterComponent } from '../Components/footer'
+import { HeaderComponent } from '../Components/header'
+import SideBarMenu from '../Components/sidebar/SideBarMenu'
+import HomeMain from '../screens/Main/HomeMain'
+import HomeMainPopup from '../screens/Main/HomeMainPopup'
 
-export default function MainHomepage() {
+export default function HomePage() {
+  const [isOpen, setIsOpen] = useState(true)
 
-    let style = {
-        backgroundImage: 'url("/images/startup/splashLogo.png")'
-    }
-
-    return (
-        <div className='h-screen bg-startupmain bg-center bg-cover'>
-
-            <div className=' absolute top-8 w-full flex justify-center px-4 '>
-                <Image  src="/images/startup/splashLogo.webp" height={180} width={500} />
-            </div>
-         
-            {/* <img src="images/startup/main.webp" className='h-screen w-screen  o  ' alt="" /> */}
-
-            <div className='h-[10vh] flex flex-col justify-center absolute bottom-10 w-full'>
-
-                <Link href='/main'>
-                    <img src="images/startup/startbutton.png" className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
-                </Link>
-
-
-            </div>
-
-
-        </div>
-    )
+  return (
+    <>
+      <HomeMainPopup isVisible={isOpen} setIsOpen={setIsOpen} />
+      <HeaderComponent image={'/images/homePage/Logo.webp'} />{' '}
+      <div className='min-h-[100vh] flex'>
+        <SideBarMenu />
+        <HomeMain />
+      </div>
+      <FooterComponent />
+    </>
+  )
 }

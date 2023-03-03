@@ -2,7 +2,7 @@ export const sidebarNavItems = [
   {
     id: 1,
     title: 'Home',
-    link: '/main',
+    link: '/',
     iconSrc: '/images/sidebar/home.png',
   },
   {
