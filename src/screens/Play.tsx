@@ -5,7 +5,7 @@ import { games } from '../data/play.data'
 
 const Play: FC = () => {
   return (
-    <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
+    <div className='w-full pb-10 md:pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       <ActionSection className='flex-wrap' cardWrapperClasses='lg:gap-12v xl:!gap-14 !flex-wrap'>
         {games.map(({ link, img }) => (
           <div className='basis-[48%] md:basis-[21%]'>

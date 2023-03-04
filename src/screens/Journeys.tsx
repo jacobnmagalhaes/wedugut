@@ -18,13 +18,13 @@ const Journeys: FC = () => {
   )
 
   return (
-    <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
+    <div className='w-full pb-10 md:pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       {!searchTerm ? (
         <>
           <ActionSection
             title='Featured action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {allFeaturedActionJourneys.map(({ link, id, image, points, text }) => (
               <ActionCard
                 key={id}
@@ -63,7 +63,7 @@ const Journeys: FC = () => {
           <ActionSection
             title='Featured action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {getSearchedJourneysData(searchTerm).featuredJourneys.length ? (
               getSearchedJourneysData(searchTerm).featuredJourneys.map(
                 ({ link, id, image, points, text }) => (

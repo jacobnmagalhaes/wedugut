@@ -31,11 +31,11 @@ const HomeMain: FC = () => {
   )
 
   return (
-    <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
+    <div className='w-full pb-10 md:pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       {!searchTerm ? (
         <>
           <ActionSection
-            className='mb-20'
+            className='mb-12 md:mb-20'
             title='Featured action journeys'
             subtitle='Learn about issues and take action!'>
             {featuredActionJourneys.map(({ link, id, image, points, text }) => (
@@ -54,7 +54,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {actionJourneyFirst.map(({ link, id, image, points, text }) => (
               <ActionCard
                 key={id}
@@ -69,7 +69,10 @@ const HomeMain: FC = () => {
             ))}
           </ActionSection>
 
-          <ActionSection title='Kids for kids' subtitle='Kids helping kids!' className='mb-20'>
+          <ActionSection
+            title='Kids for kids'
+            subtitle='Kids helping kids!'
+            className='mb-12 md:mb-20'>
             <ActionCard
               image={kidsForKids.image}
               link={kidsForKids.link}
@@ -83,7 +86,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {actionJourneysSecond.map(({ link, id, image, points, text }) => (
               <ActionCard
                 key={id}
@@ -101,7 +104,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Shorts videos'
             subtitle='See what our volunteers have to say!'
-            className='mb-20'
+            className='mb-12 md:mb-20'
             cardWrapperClasses='flex-wrap'>
             {shortsVideos.map(({ link, name, shareLink, shares }) => (
               <div key={link} className='w-wrap-card'>
@@ -120,7 +123,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {actionJourneysThird.map(({ link, id, image, points, text }) => (
               <ActionCard
                 key={id}
@@ -138,7 +141,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Long videos'
             subtitle='See the result of your Actions!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {youtubeVideos.map(({ _id, link, text, name, shareLink }) => (
               <div key={_id} className='w-wrap-card-2'>
                 <Video width='1' text={text} link={link} name={name} shareLink={shareLink} />
@@ -156,7 +159,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {actionJourneysFourth.map(({ link, id, image, points, text }) => (
               <ActionCard
                 key={id}
@@ -174,7 +177,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Shop & give'
             subtitle='Every purchase takes an action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             <ActionCard
               image='/images/main/shop-image.png'
               link='https://friends.dugut.app/shop'
@@ -188,7 +191,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Action journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {actionJourneysFifth.map(({ link, id, image, points, text }) => (
               <ActionCard
                 key={id}
@@ -219,7 +222,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Action and featured journeys'
             subtitle='Learn about issues and take action!'
-            className='mb-20'
+            className='mb-12 md:mb-20'
             cardWrapperClasses='!flex-wrap'>
             {getSearchedMainData(searchTerm).journeys.length ? (
               getSearchedMainData(searchTerm).journeys.map(({ link, id, image, points, text }) => (
@@ -242,7 +245,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Long videos'
             subtitle='See the result of your Actions!'
-            className='mb-20'>
+            className='mb-12 md:mb-20'>
             {getSearchedMainData(searchTerm).videos.length ? (
               getSearchedMainData(searchTerm).videos.map(({ _id, link, text, name, shareLink }) => (
                 <div key={_id} className='w-wrap-card-2'>
@@ -264,7 +267,7 @@ const HomeMain: FC = () => {
           <ActionSection
             title='Shorts videos'
             subtitle='See what our volunteers have to say!'
-            className='mb-20'
+            className='mb-12 md:mb-20'
             cardWrapperClasses='flex-wrap'>
             {getSearchedMainData(searchTerm).shorts.length ? (
               getSearchedMainData(searchTerm).shorts.map(({ link, name, shareLink, shares }) => (

@@ -21,10 +21,10 @@ const KidsZone: FC = () => {
   )
 
   return (
-    <div className='w-full pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
+    <div className='w-full pb-10 md:pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
       {!searchTerm ? (
         <>
-          <ActionSection className='mb-20'>
+          <ActionSection className='mb-12 md:mb-20'>
             <ActionCard
               image='/images/main/KIDS BANNER.png'
               link='/kids'
@@ -36,7 +36,7 @@ const KidsZone: FC = () => {
           </ActionSection>
 
           <ActionSection
-            className='mb-20'
+            className='mb-12 md:mb-20'
             title='Action journeys'
             subtitle='Learn about issues and take action!'>
             {kidsActionJourneysFirst.map(({ link, id, image, points, text }) => (
@@ -54,7 +54,7 @@ const KidsZone: FC = () => {
           </ActionSection>
 
           <ActionSection
-            className='mb-20'
+            className='mb-12 md:mb-20'
             title='Long videos'
             subtitle='See result of your Actions!'>
             {kidsLongVideos.map(({ link, id, shareLink, name }) => (
@@ -72,7 +72,7 @@ const KidsZone: FC = () => {
           </ActionSection>
 
           <ActionSection
-            className='flex-wrap mb-20'
+            className='flex-wrap mb-12 md:mb-20'
             cardWrapperClasses='lg:gap-12 xl:!gap-14 !flex-wrap'
             title='Short videos'
             subtitle='See what our volunteers have to say!'>
@@ -104,7 +104,7 @@ const KidsZone: FC = () => {
       ) : (
         <>
           <ActionSection
-            className='mb-20'
+            className='mb-12 md:mb-20'
             title='Action journeys'
             subtitle='Learn about issues and take action!'>
             {getSearchedKidsData(searchTerm).journeys.length ? (
@@ -126,7 +126,7 @@ const KidsZone: FC = () => {
           </ActionSection>
 
           <ActionSection
-            className='mb-20'
+            className='mb-12 md:mb-20'
             title='Long videos'
             subtitle='See result of your Actions!'>
             {getSearchedKidsData(searchTerm).videos.length ? (
