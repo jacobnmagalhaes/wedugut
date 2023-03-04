@@ -15,7 +15,7 @@ const SideBarMenu: FC<IProps> = ({ open, setIsOpenPopup }) => {
   return (
     <div
       className={cn(
-        'bg-white pt-0 md:pt-16 pb-16 md:pb-24 pl-10 pr-6 w-52 min-w-[200px] h-full hidden md:block shadow-2xl sticky top-0 left-0 overflow-y-auto md:overflow-y-visible',
+        'bg-white pt-0 md:pt-16 pb-16 md:pb-24 pl-8 pr-8 w-52 min-w-[200px] h-full hidden md:block shadow-2xl sticky top-0 left-0 overflow-y-auto md:overflow-y-visible',
         {
           ['!block']: open,
         },
