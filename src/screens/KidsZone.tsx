@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { FC, useEffect } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import ActionCard from '../Components/ActionCard/ActionCard'
 import ActionSection from '../Components/ActionSection/ActionSection'
@@ -13,12 +13,24 @@ const KidsZone: FC = () => {
   const searchTerm = useSelector((state: any) => state.search.searchTerm)
   const dispatch = useDispatch()
 
+  const [clickedId, setClickedId] = useState<null | number>(null)
+
   useEffect(
     () => () => {
       dispatch(setSearchTerm(''))
     },
     [],
   )
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setClickedId(null)
+    }, 750)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [clickedId])
 
   return (
     <div className='w-full pb-10 md:pb-20 pt-16 px-6 sm:px-8 md:pr-8 lg:pr-11'>
@@ -39,17 +51,27 @@ const KidsZone: FC = () => {
             className='mb-12 md:mb-20'
             title='Action journeys'
             subtitle='Learn about issues and take action!'>
-            {kidsActionJourneysFirst.map(({ link, id, image, points, text }) => (
-              <ActionCard
+            {kidsActionJourneysFirst.map(({ link, id, image, points, text, isComingSoon }) => (
+              <div
                 key={id}
-                width='1/4'
-                image={image}
-                points={points}
-                text={text}
-                link={link}
-                imgWidth={285}
-                imgHeight={468}
-              />
+                className='w-wrap-card-action relative'
+                onClick={() => setClickedId(id)}>
+                <ActionCard
+                  width='1'
+                  image={image}
+                  points={points}
+                  text={text}
+                  link={link}
+                  imgWidth={285}
+                  imgHeight={468}
+                  isComingSoon={isComingSoon}
+                />
+                {clickedId === 3 && id === 3 && (
+                  <p className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-max px-2 lg:px-6 py-2 bg-red-400 font-semibold text-sm lg:text-xl text-white'>
+                    Coming soon!
+                  </p>
+                )}
+              </div>
             ))}
           </ActionSection>
 
@@ -90,7 +112,7 @@ const KidsZone: FC = () => {
             ))}
           </ActionSection>
 
-          <ActionSection title='Just play mini games' subtitle='have fun and learn!'>
+          <ActionSection title='Just play mini games' subtitle='Have fun and learn!'>
             <ActionCard
               image='/images/main/GAMES.png'
               link='/play'

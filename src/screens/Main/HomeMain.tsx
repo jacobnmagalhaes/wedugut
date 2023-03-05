@@ -206,7 +206,7 @@ const HomeMain: FC = () => {
             ))}
           </ActionSection>
 
-          <ActionSection title='Just play mini games' subtitle='have fun and learn!'>
+          <ActionSection title='Just play mini games' subtitle='Have fun and learn!'>
             <ActionCard
               image='/images/main/GAMES.png'
               link='/play'

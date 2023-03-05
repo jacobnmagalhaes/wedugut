@@ -11,7 +11,7 @@ export const kidsActionJourneysFirst = [
   {
     id: 2,
     name: '',
-    link: 'https://aventurasdeunabotella.dugut.app/',
+    link: 'https://aventurasdeunabotella.dugut.app/world-page/',
     image: '/images/kids-zone/BOTELLA.png',
     points: 500,
     text: 'Clean Up Plastic!',
@@ -25,11 +25,12 @@ export const kidsActionJourneysFirst = [
     points: 500,
     text: 'Help Refugee Children!',
     audience: 'Kids',
+    isComingSoon: true,
   },
   {
     id: 4,
     name: '',
-    link: '/',
+    link: 'https://climatechange.dugut.app/world-page/',
     image: '/images/main/LOS--ÁRBOLES-SON--IMPORTANTES_.png',
     points: 500,
     text: 'Plant a Tree!',

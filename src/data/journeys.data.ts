@@ -2,7 +2,7 @@ export const allActionJourneys = [
   {
     id: 3,
     name: '!',
-    link: 'https://refugeecrisis.dugut.app/',
+    link: 'https://refugeecrisis.dugut.app/world-page/',
     image: '/images/main/REFUGEES.png',
     points: 500,
     text: 'Help Refuge Children!',
@@ -11,16 +11,16 @@ export const allActionJourneys = [
   {
     id: 4,
     name: '',
-    link: 'https://plastic.dugut.app/world-page/#',
+    link: 'https://plastic.dugut.app/world-page/',
     image: '/images/main/OUR--PLASTIC--WASTE_.png',
     points: 500,
-    text: 'Clean Uo Plastic!',
+    text: 'Clean Up Plastic!',
     audience: 'Adult',
   },
   {
     id: 5,
     name: '',
-    link: 'https://mentalhealth.dugut.app/',
+    link: 'https://mentalhealth.dugut.app/world-page/',
     image: '/images/main/MENTAL-HEALTH.png',
     points: 500,
     text: 'Create Awareness!',
@@ -29,7 +29,7 @@ export const allActionJourneys = [
   {
     id: 6,
     name: '',
-    link: 'https://pride.dugut.app/',
+    link: 'https://pride.dugut.app/world-page/',
     image: '/images/main/LGBTQ+.png',
     points: 500,
     text: 'Create Awareness!',
@@ -38,7 +38,7 @@ export const allActionJourneys = [
   {
     id: 8,
     name: '',
-    link: 'https://cyberbullying.dugut.app/',
+    link: 'https://cyberbullying.dugut.app/world-page/',
     image: '/images/main/CYBER-BULLYING.png',
     points: 500,
     text: 'Create Awareness!',
@@ -47,7 +47,7 @@ export const allActionJourneys = [
   {
     id: 9,
     name: '',
-    link: 'https://2050.dugut.app/',
+    link: 'https://2050.dugut.app/world-page/',
     image: '/images/main/POST-APOCALYPS-2050_.png',
     points: 500,
     text: 'Plant a Tree!',
@@ -56,7 +56,7 @@ export const allActionJourneys = [
   {
     id: 10,
     name: '',
-    link: 'https://guncontrol.dugut.app/',
+    link: 'https://guncontrol.dugut.app/world-page/',
     image: '/images/main/GUN-VIOLENCE.png',
     points: 500,
     text: 'Create Awareness!',
@@ -65,7 +65,7 @@ export const allActionJourneys = [
   {
     id: 11,
     name: '',
-    link: 'https://diamond.dugut.app/',
+    link: 'https://diamond.dugut.app/world-page/',
     image: '/images/main/EQUALITY.png',
     points: 500,
     text: 'Create Awareness!',
@@ -74,7 +74,7 @@ export const allActionJourneys = [
   {
     id: 12,
     name: '',
-    link: 'https://accesstowater.dugut.app/',
+    link: 'https://accesstowater.dugut.app/world-page/',
     image: '/images/main/CLEAN-WATER.png',
     points: 500,
     text: 'Supply Clean Drinking Water!',
@@ -83,7 +83,7 @@ export const allActionJourneys = [
   {
     id: 13,
     name: '',
-    link: 'https://wisa3.dugut.app/',
+    link: 'https://wisa3.dugut.app/world-page/',
     image: '/images/main/SAVE-WATER.png',
     points: 500,
     text: 'Supply Clean Drinking Water!',
@@ -92,7 +92,7 @@ export const allActionJourneys = [
   {
     id: 14,
     name: '',
-    link: 'https://wildlife.dugut.app/',
+    link: 'https://wildlife.dugut.app/world-page/',
     image: '/images/main/WILDLIFE-TRADE.png',
     points: 500,
     text: 'Create Awareness!',
@@ -101,7 +101,7 @@ export const allActionJourneys = [
   {
     id: 15,
     name: '',
-    link: 'https://renewableenergy.dugut.app/',
+    link: 'https://renewableenergy.dugut.app/world-page/',
     image: '/images/main/WIND-ENERGY.png',
     points: 500,
     text: 'Create Awareness!',
@@ -110,7 +110,7 @@ export const allActionJourneys = [
   {
     id: 16,
     name: '',
-    link: 'https://saveamazon.dugut.app/',
+    link: 'https://saveamazon.dugut.app/world-page/',
     image: '/images/main/AMAZONE.png',
     points: 500,
     text: 'Create Awareness!',
@@ -119,7 +119,7 @@ export const allActionJourneys = [
   {
     id: 17,
     name: '',
-    link: 'https://climatechange.dugut.app/world-page/#',
+    link: 'https://climatechange.dugut.app/world-page/',
     image: '/images/main/CLIMATE--CHANGE--IS--REAL_.png',
     points: 500,
     text: 'Plant a Tree!',
@@ -137,7 +137,7 @@ export const allActionJourneys = [
   {
     id: 19,
     name: '',
-    link: 'https://viento.dugut.app/',
+    link: 'https://viento.dugut.app/world-page/',
     image: '/images/main/VIENTO-ENERGYA-RENOVABLE_.png',
     points: 500,
     text: 'Crea Conciencia!',
@@ -155,7 +155,7 @@ export const allActionJourneys = [
   {
     id: 21,
     name: '',
-    link: 'https://savewhales.dugut.app/',
+    link: 'https://savewhales.dugut.app/world-page/',
     image: '/images/main/SAVE-WHALES.png',
     points: 500,
     text: 'Create Awareness!',
@@ -164,7 +164,7 @@ export const allActionJourneys = [
   {
     id: 22,
     name: '',
-    link: 'https://wisa2.dugut.app/',
+    link: 'https://wisa2.dugut.app/world-page/',
     image: '/images/main/PROVIDE-CLEAN-SANITATION_.png',
     points: 500,
     text: 'Supply Clean Water!',
@@ -173,7 +173,7 @@ export const allActionJourneys = [
   {
     id: 23,
     name: '',
-    link: 'https://stopworldhunger.dugut.app/',
+    link: 'https://stopworldhunger.dugut.app/world-page/',
     image: '/images/main/END-WORLD-HUNGER.png',
     points: 500,
     text: 'Create Awareness!',
@@ -194,7 +194,7 @@ export const allFeaturedActionJourneys = [
   {
     id: 2,
     name: '',
-    link: 'https://climatechange.dugut.app/world-page/#',
+    link: 'https://climatechange.dugut.app/world-page/',
     image: '/images/main/climate-change.png',
     points: 500,
     text: 'Plant a Tree!',

@@ -12,6 +12,7 @@ interface IProps {
   imgWidth: number
   imgHeight: number
   isShareRow?: boolean
+  isComingSoon?: boolean
 }
 
 const ActionCard: FC<IProps> = ({
@@ -23,6 +24,7 @@ const ActionCard: FC<IProps> = ({
   imgWidth,
   imgHeight,
   isShareRow = true,
+  isComingSoon = false,
 }) => {
   return (
     <div
@@ -59,7 +61,7 @@ const ActionCard: FC<IProps> = ({
         </div>
       )}
       <div className='relative'>
-        <a href={link} target='_blank'>
+        {isComingSoon ? (
           <Image
             src={image}
             width={imgWidth}
@@ -67,7 +69,17 @@ const ActionCard: FC<IProps> = ({
             layout='responsive'
             className='cursor-pointer'
           />
-        </a>
+        ) : (
+          <a href={link} target='_blank'>
+            <Image
+              src={image}
+              width={imgWidth}
+              height={imgHeight}
+              layout='responsive'
+              className='cursor-pointer'
+            />
+          </a>
+        )}
       </div>
       {text && (
         <p className='mt-1'>
