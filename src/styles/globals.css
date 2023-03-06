@@ -6,8 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -26,5 +26,62 @@ a {
   body {
     color: black;
     background: white;
+  }
+}
+
+.popup {
+  width: 650px;
+}
+
+.w-wrap-card,
+.w-wrap-card-action {
+  flex: 1 0 20.5%;
+}
+
+.w-wrap-card-2 {
+  flex: 1 0 45%;
+}
+
+.menu-active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 4px;
+}
+
+@media (max-width: 1280px) {
+  .w-wrap-card {
+    flex: 1 0 23%;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 500px;
+  }
+  .w-wrap-card {
+    flex: 1 0 48%;
+  }
+
+  .w-wrap-card-2 {
+    flex: 1 0 95%;
+  }
+}
+
+@media (max-width: 567px) {
+  .popup {
+    width: 350px;
+  }
+
+  .w-wrap-card {
+    flex: 1 0 48%;
+  }
+
+  .w-wrap-card-action {
+    flex: 1 0 48%;
   }
 }
