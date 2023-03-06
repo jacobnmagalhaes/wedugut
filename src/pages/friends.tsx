@@ -20,7 +20,7 @@ export default function Friends() {
       <Popup isOpen={isVisible} setIsOpen={setIsVisible} hideOnClickOverlay={false}>
         <>
           <div className='md:w-[82%]'>
-            <Image src='/images/friends/FRIENDS PAGE POPUP.png' width={2211} height={3009} />
+            <Image src='/images/friends/FRIENDS PAGE POPUP.png' width={1915} height={3009} />
           </div>
           <a href='https://friends.dugut.app/' target='_blank'>
             <img
