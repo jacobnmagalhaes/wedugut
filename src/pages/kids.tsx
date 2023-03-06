@@ -1,48 +1,49 @@
-import Link from 'next/link'
+import Image from 'next/image'
 import Script from 'next/script'
-import React from 'react'
+import { useState } from 'react'
+import { FooterComponent } from '../Components/footer'
+import { HeaderComponent } from '../Components/header'
+import Popup from '../Components/Popup/Popup'
+import SideBarMenu from '../Components/sidebar/SideBarMenu'
+import KidsZone from '../screens/KidsZone'
 
-export default function KidsRedirect() {
-
-    let style = {
-        backgroundImage: 'url("images/startup/kids.png")'
-    }
-
-
-    return (
-        <div className='bg-gradient-to-t from-white to-[#3399cc] h-screen flex flex-col overflow-y-hidden'>
-
-
-            <img src="images/startup/kids.webp" className='object-contain  h-full p-1 w-full lg:w-4/6 m-auto ' alt="" />
-
-            <div className='h-[12vh] lg:h-[14vh] flex flex-col justify-center absolute bottom-5 md:bottom-6 w-full'>
-
-                <Link href='/kids-' className='mb-2'>
-                    <img src="images/startup/GOButton.webp"  className='cursor-pointer hover:brightness-110 w-40 m-auto ' alt="" />
-                </Link>
-
-                {/* <a href='http://friends.dugut.app' target='blank' className='mb-2'>
-                    <img src="images/startup/Connect.png" className='cursor-pointer hover:brightness-110 w-28 mt-2 md:mt-0 m-auto' alt="" />
-                </a> */}
-
-
-            </div>
-
-
-            <Script strategy='afterInteractive' src="https://www.googletagmanager.com/gtag/js?id=G-0GMXD0ECE2"></Script>
-            <Script
-                id='google-analytics'
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
+export default function Kids() {
+  const [isVisible, setIsVisible] = useState(true)
+  return (
+    <>
+      <Popup isOpen={isVisible} setIsOpen={setIsVisible}>
+        <>
+          <>
+            <Image src='/images/kids-zone/KIDS PAGE POPUP.png' width={2157} height={2636} />
+            <img
+              src='/images/main/Gobutton-1.webp'
+              className='w-44 cursor-pointer'
+              onClick={() => setIsVisible(false)}
+            />
+          </>
+        </>
+      </Popup>
+      <HeaderComponent image={'/images/homePage/Logo.webp'} />{' '}
+      <div className='min-h-[100vh] flex'>
+        <SideBarMenu />
+        <KidsZone />
+      </div>
+      <FooterComponent />
+      <Script
+        strategy='afterInteractive'
+        src='https://www.googletagmanager.com/gtag/js?id=G-0GMXD0ECE2'></Script>
+      <Script
+        id='google-analytics'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag() { dataLayer.push(arguments); }
                     gtag('js', new Date());
                     gtag('config', 'G-0GMXD0ECE2');
         `,
-                }}
-            />
-
-        </div>
-    )
+        }}
+      />
+    </>
+  )
 }
