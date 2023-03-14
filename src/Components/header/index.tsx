@@ -55,7 +55,7 @@ export function HeaderComponent({ image }: PropsHeader) {
               </Link>
             </div>
             <p className='uppercase text-white ml-6 lg:ml-8 xl:ml-12 text-xs lg:text-base hidden lg:block'>
-              Change our future, 1 small action at time!
+              Change our future, 1 small action at a time!
             </p>
           </div>
           <div className='flex items-center'>
